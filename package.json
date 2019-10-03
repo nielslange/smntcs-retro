@@ -16,15 +16,17 @@
   ],
   "homepage": "https://github.com/nielslange/retro#readme",
   "repository": {
-		"type": "git",
-		"url": "git+https://github.com/nielslange/retro.git"
-	},
+    "type": "git",
+    "url": "git+https://github.com/nielslange/retro.git"
+  },
   "bugs": {
     "web": "https://github.com/nielslange/retro/issues"
   },
-	"devDependencies": {
-		"@wordpress/scripts": "^5.0.0"
-	},  
+  "devDependencies": {
+    "@wordpress/scripts": "^5.0.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-wordpress": "^14.0.0"
+  },
   "licenses": [
     {
       "name": "GPL-3.0-or-later",
@@ -32,8 +34,8 @@
     }
   ],
   "scripts": {
-		"lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'",
-		"lint:js": "wp-scripts lint-js 'assets/**/*.js'",
-		"lint:pkg-json": "wp-scripts lint-pkg-json"
-	}
+    "lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'",
+    "lint:js": "wp-scripts lint-js 'assets/**/*.js'",
+    "lint:pkg-json": "wp-scripts lint-pkg-json"
+  }
 }
