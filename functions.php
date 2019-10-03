@@ -130,6 +130,7 @@ function retro_menus() {
 
 	$locations = array(
 		'primary' => __( 'Primary Menu', 'retro' ),
+		'footer'  => __( 'Footer Menu', 'retro' ),
 	);
 
 	register_nav_menus( $locations );

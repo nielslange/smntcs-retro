@@ -15,7 +15,23 @@
 
 			<div id="footer-menu-wrapper">
 
-				<nav id="footer-menu">#footer-menu</nav>
+				<nav id="footer-menu">
+
+				<?php
+
+				if ( has_nav_menu( 'footer' ) ) {
+					wp_nav_menu(
+						array(
+							'theme_location' => 'footer',
+							'container'      => '',
+							'depth'          => 1,
+						)
+					);
+				}
+
+				?>
+
+				</nav>
 
 			</div><!-- #footer-menu-wrapper -->
 
