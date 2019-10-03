@@ -23,7 +23,7 @@
     "stylelint-config-wordpress": "^14.0.0"
   },
   "scripts": {
-    "lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'",
+    "lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'"
     // "lint:js": "wp-scripts lint-js 'assets/**/*.js'",
     // "lint:pkg-json": "wp-scripts lint-pkg-json"
   }
