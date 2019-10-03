@@ -1,0 +1,83 @@
+/*
+Theme Name: Retro
+Theme URI: https://github.com/nielslange/retro/
+Author: Niels Lange
+Author URI: https://nielslange.de/
+Description: 📟 Retro is a minimalistic theme for the average nerd
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: reboot
+Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+/* ----------------------------------------------------------------------------------
+0. Normalize styles
+---------------------------------------------------------------------------------- */
+
+@import 'assets/css/normalize.css';
+
+/* ----------------------------------------------------------------------------------
+1. Document styles
+---------------------------------------------------------------------------------- */
+
+:root {
+	--black: #343a44;
+	--grey: #697383;
+	--white: #d9d9d9;
+	--green: #8f9e6a;
+	--red: #b24c4f;
+	--blue: #6aa0c4;
+	--yellow: #efc074;
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+	background: var(--black);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: var(--white);
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.7rem;
+	letter-spacing: -0.015em;
+	text-align: left;
+	padding: 1rem 2rem;
+	max-width: 580px;
+	hyphens: auto;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	-webkit-font-smoothing: antialiased;
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+h1  {
+	color: var(--green);
+}
+
+h2  {
+	color: var(--red);
+}
+
+h3  {
+	color: var(--yellow);
+}
+
+h4  {
+	color: var(--blue);
+}
+
+a {
+	color: var(--blue);
+}
+
