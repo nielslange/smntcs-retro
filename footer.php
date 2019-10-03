@@ -11,6 +11,23 @@
 
 ?>		
 
+		<footer>
+
+			<div id="footer-menu-wrapper">
+
+				<nav id="footer-menu">#footer-menu</nav>
+
+			</div><!-- #footer-menu-wrapper -->
+
+
+			<div id="footer-credits-wrapper">
+
+				#footer-credits
+
+			</div><!-- #footer-credits-wrapper -->
+
+		</footer>
+
 		<?php wp_footer(); ?>
 
 	</body>

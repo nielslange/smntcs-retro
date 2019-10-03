@@ -25,3 +25,19 @@
 	<body <?php body_class(); ?>>
 
 		<?php wp_body_open(); ?>
+
+		<header>
+
+			<div id="header-title">
+
+				#header-title
+
+			</div><!-- #header-title -->
+
+			<div id="header-menu-wrapper">
+
+				<nav id="header-menu">#header-menu</nav>
+
+			</div><!-- #header-menu -->
+
+		</header>
