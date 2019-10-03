@@ -11,23 +11,25 @@ Text Domain: reboot
 Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 */
 
-/* ----------------------------------------------------------------------------------
-0. Normalize styles
----------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
-@import 'assets/css/normalize.css';
+/* 0. Normalize styles
+/* -------------------------------------------------------------------------- */
 
-/* ----------------------------------------------------------------------------------
-1. Document styles
----------------------------------------------------------------------------------- */
+@import "assets/css/normalize.css";
+
+/* -------------------------------------------------------------------------- */
+
+/* 1. Document styles
+/* -------------------------------------------------------------------------- */
 
 :root {
 	--black: #343a44;
-	--grey: #697383;
-	--white: #d9d9d9;
-	--green: #8f9e6a;
-	--red: #b24c4f;
 	--blue: #6aa0c4;
+	--green: #8f9e6a;
+	--grey: #697383;
+	--red: #b24c4f;
+	--white: #d9d9d9;
 	--yellow: #efc074;
 }
 
@@ -41,7 +43,7 @@ body {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: var(--white);
-	font-family: 'Courier New', Courier, monospace;
+	font-family: "Courier New", Courier, monospace;
 	font-size: 1.7rem;
 	letter-spacing: -0.015em;
 	text-align: left;
@@ -61,19 +63,19 @@ body {
 	word-wrap: break-word;
 }
 
-h1  {
+h1 {
 	color: var(--green);
 }
 
-h2  {
+h2 {
 	color: var(--red);
 }
 
-h3  {
+h3 {
 	color: var(--yellow);
 }
 
-h4  {
+h4 {
 	color: var(--blue);
 }
 

@@ -124,7 +124,7 @@ add_action( 'wp_enqueue_scripts', 'retro_register_scripts' );
 function retro_menus() {
 
 	$locations = array(
-		'primary'  => __( 'Primary Menu', 'retro' ),
+		'primary' => __( 'Primary Menu', 'retro' ),
 	);
 
 	register_nav_menus( $locations );
@@ -142,7 +142,6 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 	function wp_body_open() {
 		do_action( 'wp_body_open' );
 	}
-
 }
 
 /**
@@ -153,4 +152,5 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 function retro_skip_link() {
 	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
 }
+
 add_action( 'wp_body_open', 'retro_skip_link', 5 );

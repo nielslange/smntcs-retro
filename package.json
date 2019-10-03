@@ -1,27 +1,30 @@
 {
   "name": "retro",
-  "description": "📟 Retro is a minimalistic theme for the average nerd",
   "version": "1.0.0",
+  "description": "📟 Retro is a minimalistic theme for the average nerd",
+  "author": "Niels Lange",
+  "license": "MIT",
   "keywords": [
     "WordPress",
     "Theme",
     "Retro"
   ],
-  "maintainers": [
-    {
-      "name": "Niels Lange",
-      "email": "info@nielslange.de",
-      "web": "https://nielslange.de/"
-    }
-  ],
+  "homepage": "https://github.com/nielslange/retro#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nielslange/retro.git"
+  },
   "bugs": {
     "web": "https://github.com/nielslange/retro/issues"
   },
-  "licenses": [
-    {
-      "name": "GPL-3.0-or-later",
-      "url": "https://spdx.org/licenses/GPL-3.0-or-later.html"
-    }
-  ],
-  "homepage": "https://github.com/nielslange/retro#readme"
+  "devDependencies": {
+    "@wordpress/scripts": "^5.0.0",
+    "stylelint": "^11.0.0",
+    "stylelint-config-wordpress": "^14.0.0"
+  },
+  "scripts": {
+    "lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'",
+    "lint:js": "wp-scripts lint-js 'assets/**/*.js'",
+    "lint:pkg-json": "wp-scripts lint-pkg-json"
+  }
 }
