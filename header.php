@@ -30,7 +30,16 @@
 
 			<div id="header-title">
 
-				#header-title
+				<?php if ( is_home() ) : ?>
+
+					<?php retro_site_title(); ?>
+					<?php retro_site_description(); ?>
+
+				<?php else : ?>
+
+
+
+				<?php endif; ?>
 
 			</div><!-- #header-title -->
 
