@@ -16,4 +16,24 @@
 
 get_header();
 
+?>
+
+<main id="corpus" role="main">
+
+	<section id="corpus-posts">
+
+		#corpus-posts
+
+	</section><!-- #corpus-posts -->
+
+	<div class="corpus-pagination">
+
+		#corpus-pagination
+
+	</div><!-- #corpus-pagination -->
+
+</main><!-- #corpus -->
+
+<?php
+
 get_footer();
