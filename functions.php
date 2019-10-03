@@ -88,6 +88,11 @@ function retro_theme_support() {
 add_action( 'after_setup_theme', 'retro_theme_support' );
 
 /**
+ * Include required files.
+ */
+require get_template_directory() . '/inc/template-tags.php';
+
+/**
  * Register and enqueue styles.
  *
  * @since 1.0.0
