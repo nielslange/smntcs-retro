@@ -1,15 +1,27 @@
 {
   "name": "retro",
+  "description": "📟 Retro is a minimalistic theme for the average nerd",
   "version": "1.0.0",
-  "description": "...",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "WordPress",
-    "theme"
+    "Theme",
+    "Retro"
   ],
-  "author": "Niels Lange",
-  "license": "GPL-2.0-only"
+  "maintainers": [
+    {
+      "name": "Niels Lange",
+      "email": "info@nielslange.de",
+      "web": "https://nielslange.de/"
+    }
+  ],
+  "bugs": {
+    "web": "https://github.com/nielslange/retro/issues"
+  },
+  "licenses": [
+    {
+      "name": "GPL-3.0-or-later",
+      "url": "https://spdx.org/licenses/GPL-3.0-or-later.html"
+    }
+  ],
+  "homepage": "https://github.com/nielslange/retro#readme"
 }
