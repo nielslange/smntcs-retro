@@ -30,22 +30,28 @@
 
 			<div id="header-title">
 
-				<?php if ( is_home() ) : ?>
-
-					<?php retro_site_title(); ?>
-					<?php retro_site_description(); ?>
-
-				<?php else : ?>
-
-
-
-				<?php endif; ?>
+				<?php retro_site_title(); ?>
+				<?php retro_site_description(); ?>
 
 			</div><!-- #header-title -->
 
 			<div id="header-menu-wrapper">
 
-				<nav id="header-menu">#header-menu</nav>
+				<nav id="header-menu">
+
+					<?php
+
+					if ( has_nav_menu( 'primary' ) ) {
+						wp_nav_menu( array( 
+							'theme_location' => 'primary',
+							'container'      => '',
+							'depth'          => 1,
+						) );
+					}
+
+					?>
+
+				</nav>
 
 			</div><!-- #header-menu -->
 
