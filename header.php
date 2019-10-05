@@ -53,6 +53,8 @@
 
 				</nav>
 
+				<hr>
+
 			</div><!-- #header-menu -->
 
 		</header>

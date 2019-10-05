@@ -156,7 +156,7 @@ if ( ! function_exists( 'wp_body_open' ) ) {
  * @since 1.0.0
  */
 function retro_skip_link() {
-	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
+	echo '<a class="skip-link screen-reader-text" href="#corpus">' . __( 'Skip to the content', 'retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
 }
 
 add_action( 'wp_body_open', 'retro_skip_link', 5 );

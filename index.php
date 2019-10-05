@@ -22,13 +22,22 @@ get_header();
 
 	<section id="corpus-posts">
 
-		#corpus-posts
+		<?php
+		
+		if ( have_posts() ) {
+			while ( have_posts() ) {
+				the_post();
+				get_template_part( 'template-parts/content', get_post_type() );
+			}
+		}
+		
+		?>
 
 	</section><!-- #corpus-posts -->
 
 	<div class="corpus-pagination">
 
-		#corpus-pagination
+		<?php the_posts_pagination(); ?>
 
 	</div><!-- #corpus-pagination -->
 

@@ -63,32 +63,56 @@ body {
 	word-wrap: break-word;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	color: var(--green);
-	font-size: 3.1rem;
-}
-
-h2 {
-	color: var(--green);
-	font-size: 2rem;
-}
-
-h3 {
-	color: var(--yellow);
-}
-
-h4 {
-	color: var(--blue);
+	font-weight: 400;
+	font-size: 1.8rem;
 }
 
 a {
 	color: var(--blue);
+	text-decoration: none;
+	border-bottom: transparent;
+}
+
+a:focus,
+a:hover {
+	border-bottom: 1px solid;
+}
+
+hr {
+	margin: 2rem 0;
+	color: transparent;
+	border-color: transparent;
+	background-color: transparent;
+	border-top: 1px solid var(--green);
 }
 
 /* -------------------------------------------------------------------------- */
 
 /* 2. Margins
 /* -------------------------------------------------------------------------- */
+
+.margin-bottom-xl {
+	margin-bottom: 5rem;
+}
+
+.margin-bottom-xs {
+	margin-bottom: 1rem;
+}
+
+.margin-top-xl {
+	margin-top: 5rem;
+}
+
+.margin-top-xs {
+	margin-top: 1rem;
+}
 
 .no-margin-bottom {
 	margin-bottom: 0;
@@ -117,12 +141,13 @@ a {
 
 .menu li {
 	display: inline;
-}
-
-.menu li::after {
-	content: " · ";
+	margin-right: 0.5rem;
 }
 
 .menu li:last-of-type::after {
 	content: none;
+}
+
+article p:first-of-type {
+	margin-top: 0.5rem;
 }
