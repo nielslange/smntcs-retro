@@ -48,8 +48,8 @@ body {
 	padding: 1rem 2rem;
 	max-width: 580px;
 	-webkit-hyphens: auto;
-	    -ms-hyphens: auto;
-	        hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
 *,
