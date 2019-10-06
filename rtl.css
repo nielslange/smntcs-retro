@@ -33,34 +33,6 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
 	--yellow: #efc074;
 }
 
-@font-face {
-	font-family: Hack;
-	src: url(./assets/fonts/hack-regular.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-regular.woff?sha=3114f1256) format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: Hack;
-	src: url(./assets/fonts/hack-bold.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-bold.woff?sha=3114f1256) format("woff");
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: Hack;
-	src: url(./assets/fonts/hack-italic.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-italic.woff?sha=3114f1256) format("woff");
-	font-weight: 400;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: Hack;
-	src: url(./assets/fonts/hack-bolditalic.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-bolditalic.woff?sha=3114f1256) format("woff");
-	font-weight: 700;
-	font-style: italic;
-}
-
 html {
 	font-size: 62.5%; /* 1rem = 10px */
 }
@@ -69,14 +41,15 @@ body {
 	background: var(--black);
 	box-sizing: border-box;
 	color: var(--white);
-	font-family: Hack, monospace;
-	font-size: 1.4rem;
-	text-align: left;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.7rem;
+	letter-spacing: -0.015em;
+	text-align: right;
 	padding: 1rem 2rem;
 	max-width: 580px;
 	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
+	    -ms-hyphens: auto;
+	        hyphens: auto;
 }
 
 *,
