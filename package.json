@@ -18,11 +18,21 @@
     "web": "https://github.com/nielslange/retro/issues"
   },
   "devDependencies": {
+    "@wordpress/browserslist-config": "^2.6.0",
     "@wordpress/scripts": "^5.0.0",
+    "autoprefixer": "^9.6.1",
+    "postcss-cli": "^6.1.3",
+    "rtlcss": "^2.4.0",
     "stylelint": "^11.0.0",
     "stylelint-config-wordpress": "^14.0.0"
   },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
   "scripts": {
+    "build": "npm run build:vendor-prefixes && npm run build:rtl",
+    "build:rtl": "rtlcss style.css rtl.css",
+    "build:vendor-prefixes": "postcss -r --no-map style.css",
     "lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'",
     "lint:js": "wp-scripts lint-js 'assets/**/*.js'",
     "lint:pkg-json": "wp-scripts lint-pkg-json"

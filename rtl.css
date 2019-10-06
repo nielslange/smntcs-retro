@@ -1,0 +1,126 @@
+/*
+Theme Name: Retro
+Theme URI: https://github.com/nielslange/retro/
+Author: Niels Lange
+Author URI: https://nielslange.de/
+Description: 📟 Retro is a minimalistic theme for the average nerd
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: reboot
+Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+/* -------------------------------------------------------------------------- */
+
+/* 0. Normalize styles
+/* -------------------------------------------------------------------------- */
+
+@import "assets/css/normalize.css";
+
+/* -------------------------------------------------------------------------- */
+
+/* 1. Document styles
+/* -------------------------------------------------------------------------- */
+
+:root {
+	--black: #343a44;
+	--blue: #6aa0c4;
+	--green: #8f9e6a;
+	--grey: #697383;
+	--red: #b24c4f;
+	--white: #d9d9d9;
+	--yellow: #efc074;
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+	background: var(--black);
+	box-sizing: border-box;
+	color: var(--white);
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1.7rem;
+	letter-spacing: -0.015em;
+	text-align: right;
+	padding: 1rem 2rem;
+	max-width: 580px;
+	-webkit-hyphens: auto;
+	    -ms-hyphens: auto;
+	        hyphens: auto;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	-webkit-font-smoothing: antialiased;
+	word-break: break-word;
+	word-wrap: break-word;
+}
+
+h1 {
+	color: var(--green);
+	font-size: 3.1rem;
+}
+
+h2 {
+	color: var(--green);
+	font-size: 2rem;
+}
+
+h3 {
+	color: var(--yellow);
+}
+
+h4 {
+	color: var(--blue);
+}
+
+a {
+	color: var(--blue);
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* 2. Margins
+/* -------------------------------------------------------------------------- */
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+.no-margin-top {
+	margin-top: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* 4. Paddings
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+/* 5. Menus
+/* -------------------------------------------------------------------------- */
+
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.menu li {
+	display: inline;
+}
+
+.menu li::after {
+	content: " · ";
+}
+
+.menu li:last-of-type::after {
+	content: none;
+}
