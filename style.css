@@ -34,6 +34,34 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
 }
 
 @font-face {
+	font-family: "DejaVu Sans Mono";
+	font-style: normal;
+	font-weight: 400;
+	src: local(dejavu sans mono), local(dejavusansmono), url(DejaVuSansMono.woff) format("woff");
+}
+
+@font-face {
+	font-family: "DejaVu Sans Mono";
+	font-style: normal;
+	font-weight: 700;
+	src: local(dejavu sans mono bold), local(dejavusansmono-bold), url(DejaVuSansMono-Bold.woff) format("woff");
+}
+
+@font-face {
+	font-family: "DejaVu Sans Mono";
+	font-style: oblique;
+	font-weight: 700;
+	src: local(dejavu sans mono bold oblique), local(dejavusansmono-boldoblique), url(DejaVuSansMono-BoldOblique.woff) format("woff");
+}
+
+@font-face {
+	font-family: "DejaVu Sans Mono";
+	font-style: oblique;
+	font-weight: 400;
+	src: local(dejavu sans mono oblique), local(dejavusansmono-oblique), url(DejaVuSansMono-Oblique.woff) format("woff");
+}
+
+@font-face {
 	font-family: Hack;
 	src: url(./assets/fonts/hack-regular.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-regular.woff?sha=3114f1256) format("woff");
 	font-weight: 400;
@@ -69,7 +97,7 @@ body {
 	background: var(--black);
 	box-sizing: border-box;
 	color: var(--white);
-	font-family: Hack, monospace;
+	font-family: "DejaVu Sans Mono", monospace;
 	font-size: 1.4rem;
 	text-align: left;
 	padding: 1rem 2rem;

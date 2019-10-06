@@ -35,6 +35,16 @@ Retro bundles the following third-party resources:
 - License: MIT License, https://opensource.org/licenses/MIT  
 - URL: https://github.com/necolas/normalize.css/  
 
+**Font: DejaVu Sans Mono**
+
+- License: Bitstream Vera Fonts, https://www.gnome.org/fonts/  
+- URL: https://github.com/maxwell-k/dejavu-sans-mono-web-font/  
+
+**Font: Hack**
+
+- License: MIT License, https://opensource.org/licenses/MIT  
+- URL: https://github.com/source-foundry/Hack/  
+
 ## Changelog
 
 ### 1.0 (xxxx.xx.xx)
