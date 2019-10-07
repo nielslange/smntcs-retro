@@ -11,6 +11,8 @@
 
 ?>		
 
+		<hr>
+
 		<footer>
 
 			<div id="footer-menu-wrapper">
