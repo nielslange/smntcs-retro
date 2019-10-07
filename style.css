@@ -125,12 +125,17 @@ h6 {
 	color: var(--green);
 	font-weight: 400;
 	font-size: 1.8rem;
+	line-height: normal;
+	-webkit-margin-after: 2rem;
+	margin-block-end: 2rem;
+	-webkit-margin-before: 2rem;
+	margin-block-start: 2rem;
 }
 
 a {
 	color: var(--blue);
 	text-decoration: none;
-	border-bottom: transparent;
+	border-bottom: 1px dotted;
 }
 
 a:focus,
