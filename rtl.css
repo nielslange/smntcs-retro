@@ -33,6 +33,62 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
 	--yellow: #efc074;
 }
 
+@font-face {
+	font-family: "DejaVu Sans Mono";
+	font-style: normal;
+	font-weight: 400;
+	src: local(dejavu sans mono), local(dejavusansmono), url(DejaVuSansMono.woff) format("woff");
+}
+
+@font-face {
+	font-family: "DejaVu Sans Mono";
+	font-style: normal;
+	font-weight: 700;
+	src: local(dejavu sans mono bold), local(dejavusansmono-bold), url(DejaVuSansMono-Bold.woff) format("woff");
+}
+
+@font-face {
+	font-family: "DejaVu Sans Mono";
+	font-style: oblique;
+	font-weight: 700;
+	src: local(dejavu sans mono bold oblique), local(dejavusansmono-boldoblique), url(DejaVuSansMono-BoldOblique.woff) format("woff");
+}
+
+@font-face {
+	font-family: "DejaVu Sans Mono";
+	font-style: oblique;
+	font-weight: 400;
+	src: local(dejavu sans mono oblique), local(dejavusansmono-oblique), url(DejaVuSansMono-Oblique.woff) format("woff");
+}
+
+@font-face {
+	font-family: Hack;
+	src: url(./assets/fonts/hack-regular.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-regular.woff?sha=3114f1256) format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Hack;
+	src: url(./assets/fonts/hack-bold.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-bold.woff?sha=3114f1256) format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Hack;
+	src: url(./assets/fonts/hack-italic.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-italic.woff?sha=3114f1256) format("woff");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Hack;
+	src: url(./assets/fonts/hack-bolditalic.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-bolditalic.woff?sha=3114f1256) format("woff");
+	font-weight: 700;
+	font-style: italic;
+}
+
 html {
 	font-size: 62.5%; /* 1rem = 10px */
 }
@@ -41,15 +97,14 @@ body {
 	background: var(--black);
 	box-sizing: border-box;
 	color: var(--white);
-	font-family: "Courier New", Courier, monospace;
-	font-size: 1.7rem;
-	letter-spacing: -0.015em;
+	font-family: "DejaVu Sans Mono", monospace;
+	font-size: 1.4rem;
 	text-align: right;
 	padding: 1rem 2rem;
 	max-width: 580px;
 	-webkit-hyphens: auto;
-	    -ms-hyphens: auto;
-	        hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
 }
 
 *,
@@ -61,32 +116,61 @@ body {
 	word-wrap: break-word;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	color: var(--green);
-	font-size: 3.1rem;
-}
-
-h2 {
-	color: var(--green);
-	font-size: 2rem;
-}
-
-h3 {
-	color: var(--yellow);
-}
-
-h4 {
-	color: var(--blue);
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: normal;
+	-webkit-margin-after: 2rem;
+	margin-block-end: 2rem;
+	-webkit-margin-before: 2rem;
+	margin-block-start: 2rem;
 }
 
 a {
 	color: var(--blue);
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+a:focus,
+a:hover {
+	border-bottom: 1px solid;
+}
+
+hr {
+	margin: 2rem 0;
+	color: transparent;
+	border-color: transparent;
+	background-color: transparent;
+	border-top: 1px solid var(--green);
 }
 
 /* -------------------------------------------------------------------------- */
 
 /* 2. Margins
 /* -------------------------------------------------------------------------- */
+
+.margin-bottom-xl {
+	margin-bottom: 5rem;
+}
+
+.margin-bottom-xs {
+	margin-bottom: 1rem;
+}
+
+.margin-top-xl {
+	margin-top: 5rem;
+}
+
+.margin-top-xs {
+	margin-top: 1rem;
+}
 
 .no-margin-bottom {
 	margin-bottom: 0;
@@ -115,12 +199,13 @@ a {
 
 .menu li {
 	display: inline;
-}
-
-.menu li::after {
-	content: " · ";
+	margin-left: 0.5rem;
 }
 
 .menu li:last-of-type::after {
 	content: none;
+}
+
+article p:first-of-type {
+	margin-top: 0.5rem;
 }
