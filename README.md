@@ -1,4 +1,4 @@
-[![](https://img.shields.io/travis/nielslange/retro.svg)](https://wordpress.org/themes/retro/) 
+[![](https://api.travis-ci.com/nielslange/retro.svg?branch=master)](https://wordpress.org/themes/retro/) 
 [![](https://img.shields.io/github/issues/nielslange/retro.svg)](https://wordpress.org/themes/retro/) 
 [![](https://img.shields.io/github/forks/nielslange/retro.svg)](https://wordpress.org/themes/retro/) 
 [![](https://img.shields.io/github/stars/nielslange/retro.svg)](https://wordpress.org/themes/retro/) 
