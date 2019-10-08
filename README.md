@@ -1,3 +1,5 @@
+https://img.shields.io/travis/nielslange/retro https://img.shields.io/github/issues/nielslange/retro https://img.shields.io/github/forks/nielslange/retro https://img.shields.io/github/stars/nielslange/retro https://img.shields.io/github/license/nielslange/retro  
+
 **Theme Name:** Retro  
 **Theme URI:** https://wordpress.org/themes/retro/  
 **Contributors:** Niels Lange  
