@@ -34,6 +34,7 @@ function retro_theme_support() {
 	 */
 	global $content_width;
 	if ( ! isset( $content_width ) ) {
+		// phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
 		$content_width = 580;
 	}
 
@@ -138,15 +139,15 @@ function retro_menus() {
 
 add_action( 'init', 'retro_menus' );
 
-if ( ! function_exists( 'wp_body_open' ) ) {
+if ( ! function_exists( 'retro_wp_body_open' ) ) {
 
 	/**
 	 * Shim for wp_body_open, ensuring backwards compatibility with versions of WordPress older than 5.2.
 	 *
 	 * @since 1.0.0
 	 */
-	function wp_body_open() {
-		do_action( 'wp_body_open' );
+	function retro_wp_body_open() {
+		do_action( 'retro_wp_body_open' );
 	}
 }
 
@@ -159,4 +160,4 @@ function retro_skip_link() {
 	echo '<a class="skip-link screen-reader-text" href="#corpus">' . __( 'Skip to the content', 'retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
 }
 
-add_action( 'wp_body_open', 'retro_skip_link', 5 );
+add_action( 'retro_wp_body_open', 'retro_skip_link', 5 );
