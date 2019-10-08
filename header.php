@@ -42,11 +42,13 @@
 					<?php
 
 					if ( has_nav_menu( 'primary' ) ) {
-						wp_nav_menu( array( 
-							'theme_location' => 'primary',
-							'container'      => '',
-							'depth'          => 1,
-						) );
+						wp_nav_menu(
+							array(
+								'theme_location' => 'primary',
+								'container'      => '',
+								'depth'          => 1,
+							)
+						);
 					}
 
 					?>
