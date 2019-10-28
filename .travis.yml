@@ -34,6 +34,7 @@ before_install:
   - phpenv config-rm xdebug.ini || echo 'No xdebug config.'
 
   - composer install
+  - npm uninstall eslint
   - npm install
 
 script:
