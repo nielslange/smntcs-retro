@@ -17,6 +17,7 @@
   "bugs": {
     "web": "https://github.com/nielslange/retro/issues"
   },
+  "dependencies": {},
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.6.0",
     "@wordpress/scripts": "^5.1.0",
