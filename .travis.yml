@@ -48,7 +48,7 @@ script:
   - if [[ "$PHPCS" == 1 ]]; then composer checkcs; fi
 
   # Run the theme through lint:js checker as defined in @wordpress/scripts package.
-  - if [[ "$PHPCS" == 1 ]]; then npm run lint:js; fi
+  # - if [[ "$PHPCS" == 1 ]]; then npm run lint:js; fi
 
   # Run the theme through lint:css checker as defined in @wordpress/scripts package.
   - if [[ "$PHPCS" == 1 ]]; then npm run lint:css; fi
