@@ -26,8 +26,8 @@
 		"wptrt/wpthemereview": "^0.2.0"
 	},
 	"scripts": {
-		"checkcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --runtime-set testVersion 5.6- --ignore=vendor/*,node_modules/*",
-		"fixcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --runtime-set testVersion 5.6- --ignore=vendor/*,node_modules/*",
+		"checkcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --runtime-set testVersion 5.6-",
+		"fixcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf --runtime-set testVersion 5.6-",
 		"lint": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
 	},
 	"support": {
