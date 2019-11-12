@@ -1,8 +1,8 @@
-[![](https://api.travis-ci.com/nielslange/retro.svg?branch=master)](https://wordpress.org/themes/retro/) 
-[![](https://img.shields.io/github/issues/nielslange/retro.svg)](https://wordpress.org/themes/retro/) 
-[![](https://img.shields.io/github/forks/nielslange/retro.svg)](https://wordpress.org/themes/retro/) 
-[![](https://img.shields.io/github/stars/nielslange/retro.svg)](https://wordpress.org/themes/retro/) 
-[![](https://img.shields.io/github/license/nielslange/retro.svg)](https://wordpress.org/themes/retro/) 
+[![](https://api.travis-ci.com/nielslange/retro.svg?branch=master)](https://travis-ci.com/nielslange/retro/builds/) 
+[![](https://img.shields.io/github/issues/nielslange/retro.svg)](https://github.com/nielslange/retro/issues) 
+[![](https://img.shields.io/github/forks/nielslange/retro.svg)](https://github.com/nielslange/retro/network/members) 
+[![](https://img.shields.io/github/stars/nielslange/retro.svg)](https://github.com/nielslange/retro/stargazers) 
+[![](https://img.shields.io/github/license/nielslange/retro.svg)](https://github.com/nielslange/retro/blob/master/LICENSE) 
 
 **Theme Name:** Retro  
 **Theme URI:** https://wordpress.org/themes/retro/  
