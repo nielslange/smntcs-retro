@@ -10,7 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage Retro
+ * @subpackage Twenty_Twenty
  * @since 1.0.0
  */
 
@@ -27,12 +27,7 @@ get_header();
 		if ( have_posts() ) {
 			while ( have_posts() ) {
 				the_post();
-
-				if ( is_single() ) {
-					get_template_part( 'template-parts/content', get_post_type() );
-				} else {
-					get_template_part( 'template-parts/content', get_post_type() );
-				}
+				get_template_part( 'template-parts/content', 'single' );
 			}
 		}
 

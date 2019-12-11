@@ -24,41 +24,14 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
 /* -------------------------------------------------------------------------- */
 
 :root {
-	--black: #343a44;
+	--errie-black: #2c2c2c;
+	--onyx: #343a44;
 	--blue: #6aa0c4;
 	--green: #8f9e6a;
-	--grey: #697383;
+	--grey: #333;
 	--red: #b24c4f;
 	--white: #d9d9d9;
 	--yellow: #efc074;
-}
-
-@font-face {
-	font-family: "DejaVu Sans Mono";
-	font-style: normal;
-	font-weight: 400;
-	src: local(dejavu sans mono), local(dejavusansmono), url(DejaVuSansMono.woff) format("woff");
-}
-
-@font-face {
-	font-family: "DejaVu Sans Mono";
-	font-style: normal;
-	font-weight: 700;
-	src: local(dejavu sans mono bold), local(dejavusansmono-bold), url(DejaVuSansMono-Bold.woff) format("woff");
-}
-
-@font-face {
-	font-family: "DejaVu Sans Mono";
-	font-style: oblique;
-	font-weight: 700;
-	src: local(dejavu sans mono bold oblique), local(dejavusansmono-boldoblique), url(DejaVuSansMono-BoldOblique.woff) format("woff");
-}
-
-@font-face {
-	font-family: "DejaVu Sans Mono";
-	font-style: oblique;
-	font-weight: 400;
-	src: local(dejavu sans mono oblique), local(dejavusansmono-oblique), url(DejaVuSansMono-Oblique.woff) format("woff");
 }
 
 @font-face {
@@ -94,11 +67,12 @@ html {
 }
 
 body {
-	background: var(--black);
-	box-sizing: border-box;
+	background: var(--onyx);
+	box-sizing: content-box;
 	color: var(--white);
-	font-family: "DejaVu Sans Mono", monospace;
-	font-size: 1.4rem;
+	font-family: Hack, monospace;
+	font-size: 1.3rem;
+	line-height: 1.3;
 	text-align: right;
 	padding: 1rem 2rem;
 	max-width: 580px;
@@ -145,10 +119,11 @@ a:hover {
 
 hr {
 	margin: 2rem 0;
+	clear: both;
 	color: transparent;
 	border-color: transparent;
 	background-color: transparent;
-	border-top: 1px solid var(--green);
+	border-top: 1px solid var(--white);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -208,4 +183,138 @@ hr {
 
 article p:first-of-type {
 	margin-top: 0.5rem;
+}
+
+#header-menu {
+	margin-top: 0.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* 6. Header
+/* -------------------------------------------------------------------------- */
+
+#site-title {
+	color: var(--green);
+}
+
+#site-description {
+	color: var(--green);
+	margin-top: 0.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* 7. Required styles.
+/* -------------------------------------------------------------------------- */
+
+.wp-caption {
+	color: var(--white);
+}
+
+.wp-caption-text {
+	color: var(--white);
+}
+
+.sticky {
+	background: var(--errie-black);
+	border: 1px solid var(--grey);
+	padding: 1em;
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	word-break: normal;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	-webkit-clip-path: none;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+.gallery-caption {
+	color: var(--white);
+}
+
+.bypostauthor {
+	display: block;
+}
+
+.alignright {
+	float: left;
+	margin-right: 1em;
+}
+
+.alignleft {
+	float: right;
+	margin-left: 1em;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* 8. Block styles.
+/* -------------------------------------------------------------------------- */
+
+.wp-block-image figcaption {
+	color: var(--yellow);
+}
+
+figure {
+	-webkit-margin-before: 0;
+	margin-block-start: 0;
+	-webkit-margin-after: 0;
+	margin-block-end: 0;
+	-webkit-margin-start: 0;
+	margin-inline-start: 0;
+	-webkit-margin-end: 0;
+	margin-inline-end: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* 9. Post » Comments
+/* -------------------------------------------------------------------------- */
+
+.comment-form label {
+	display: block;
+}
+
+.comment-form .form-submit input[type="submit"] {
+	-webkit-appearance: var(--green);
+	-moz-appearance: var(--green);
+	appearance: var(--green);
 }

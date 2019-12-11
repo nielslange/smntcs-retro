@@ -40,7 +40,7 @@
 
 			<div id="footer-credits-wrapper">
 
-				#footer-credits
+				<?php retro_site_footer(); ?>
 
 			</div><!-- #footer-credits-wrapper -->
 

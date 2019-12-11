@@ -100,7 +100,8 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 function retro_register_styles() {
 
-	wp_enqueue_style( 'retro-style', get_stylesheet_uri(), null, wp_get_theme()->get( 'Version' ) );
+	// wp_enqueue_style( 'retro-style', get_stylesheet_uri(), null, wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'retro-style', get_stylesheet_uri(), null, time() );
 	wp_style_add_data( 'retro-style', 'rtl', 'replace' );
 
 }
