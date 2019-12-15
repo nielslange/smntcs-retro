@@ -178,7 +178,7 @@ function retro_site_description() {
 function retro_site_footer() {
 
 	$data[] = date( 'Y' );
-	$data[] = get_bloginfo() ?? null;
+	$data[] = get_bloginfo();
 	$data[] = esc_html__( 'All rights reserved', 'retro' );
 	$data[] = sprintf(
 		'<a href="%s">%s</a>',
