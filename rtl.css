@@ -3,7 +3,7 @@ Theme Name: Retro
 Theme URI: https://github.com/nielslange/retro/
 Author: Niels Lange
 Author URI: https://nielslange.de/
-Description: 📟 Retro is a minimalistic theme for the average nerd
+Description: 📟 Retro is a minimalistic theme for the average nerd.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,17 +11,31 @@ Text Domain: reboot
 Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 */
 
-/* -------------------------------------------------------------------------- */
+/*******************************************************************************
+ *
+ * TABLE OF CONTENTS
+ *
+ * 0. Normalize styles
+ * 1. Document styles
+ * 2. Required styles
+ * 3. Block styles
+ * 4. Header
+ * 5. Menus
+ * 6. Pages
+ * 7. Posts
+ * 8. Footer
+ *
+ ******************************************************************************/
 
-/* 0. Normalize styles
-/* -------------------------------------------------------------------------- */
+/*******************************************************************************
+ * 0. Normalize styles
+ ******************************************************************************/
 
 @import "assets/css/normalize.css";
 
-/* -------------------------------------------------------------------------- */
-
-/* 1. Document styles
-/* -------------------------------------------------------------------------- */
+/*******************************************************************************
+ * 1. Document styles
+ ******************************************************************************/
 
 :root {
 	--errie-black: #2c2c2c;
@@ -123,90 +137,12 @@ hr {
 	color: transparent;
 	border-color: transparent;
 	background-color: transparent;
-	border-top: 1px solid var(--white);
+	border-top: 1px solid var(--green);
 }
 
-/* -------------------------------------------------------------------------- */
-
-/* 2. Margins
-/* -------------------------------------------------------------------------- */
-
-.margin-bottom-xl {
-	margin-bottom: 5rem;
-}
-
-.margin-bottom-xs {
-	margin-bottom: 1rem;
-}
-
-.margin-top-xl {
-	margin-top: 5rem;
-}
-
-.margin-top-xs {
-	margin-top: 1rem;
-}
-
-.no-margin-bottom {
-	margin-bottom: 0;
-}
-
-.no-margin-top {
-	margin-top: 0;
-}
-
-/* -------------------------------------------------------------------------- */
-
-/* 4. Paddings
-/* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- */
-
-/* 5. Menus
-/* -------------------------------------------------------------------------- */
-
-.menu {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	list-style-image: none;
-}
-
-.menu li {
-	display: inline;
-	margin-left: 0.5rem;
-}
-
-.menu li:last-of-type::after {
-	content: none;
-}
-
-article p:first-of-type {
-	margin-top: 0.5rem;
-}
-
-#header-menu {
-	margin-top: 0.5rem;
-}
-
-/* -------------------------------------------------------------------------- */
-
-/* 6. Header
-/* -------------------------------------------------------------------------- */
-
-#site-title {
-	color: var(--green);
-}
-
-#site-description {
-	color: var(--green);
-	margin-top: 0.5rem;
-}
-
-/* -------------------------------------------------------------------------- */
-
-/* 7. Required styles.
-/* -------------------------------------------------------------------------- */
+/*******************************************************************************
+ * 2. Required styles
+ ******************************************************************************/
 
 .wp-caption {
 	color: var(--white);
@@ -220,6 +156,7 @@ article p:first-of-type {
 	background: var(--errie-black);
 	border: 1px solid var(--grey);
 	padding: 1em;
+	margin: 0 -1em;
 }
 
 .screen-reader-text {
@@ -284,10 +221,9 @@ article p:first-of-type {
 	clear: both;
 }
 
-/* -------------------------------------------------------------------------- */
-
-/* 8. Block styles.
-/* -------------------------------------------------------------------------- */
+/*******************************************************************************
+ * 3. Block styles
+ ******************************************************************************/
 
 .wp-block-image figcaption {
 	color: var(--yellow);
@@ -304,17 +240,94 @@ figure {
 	margin-inline-end: 0;
 }
 
-/* -------------------------------------------------------------------------- */
+/*******************************************************************************
+ * 4. Header
+ ******************************************************************************/
 
-/* 9. Post » Comments
-/* -------------------------------------------------------------------------- */
+#site-title h1,
+#site-title h2 {
+	color: var(--green);
+	margin-bottom: 0.5em;
+}
+
+#site-description h2 {
+	color: var(--green);
+	margin: 0 0 0.5rem;
+}
+
+/*******************************************************************************
+ * 5. Menus
+ ******************************************************************************/
+
+.menu {
+	margin: 1em 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.menu li {
+	display: inline;
+	margin-left: 0.5rem;
+}
+
+.menu li:last-of-type::after {
+	content: none;
+}
+
+article p:first-of-type {
+	margin-top: 0.5rem;
+}
+
+#header-menu {
+	margin-top: 0.5rem;
+}
+
+/*******************************************************************************
+ * 6. Pages
+ ******************************************************************************/
+
+/*******************************************************************************
+ * 7. Posts
+ ******************************************************************************/
+
+/* Comments ************************************/
 
 .comment-form label {
 	display: block;
+	margin-bottom: 1em;
+}
+
+.comment-form .comment-form-comment {
+	margin-top: 2em;
+}
+
+.comment-form .comment-form-comment textarea {
+	background: var(--errie-black);
+	border-color: var(--blue);
+	box-sizing: border-box;
+	color: var(--blue);
+	padding: 0.5em 1em;
+	width: 100%;
+}
+
+.comment-form .form-submit {
+	margin-bottom: 0.5em;
 }
 
 .comment-form .form-submit input[type="submit"] {
-	-webkit-appearance: var(--green);
-	-moz-appearance: var(--green);
-	appearance: var(--green);
+	background: var(--errie-black);
+	border-color: var(--blue);
+	box-sizing: border-box;
+	color: var(--blue);
+	padding: 0.5em 1em;
+	width: 100%;
+}
+
+/*******************************************************************************
+ * 7. Posts
+ ******************************************************************************/
+
+#site-footer {
+	color: var(--green);
 }

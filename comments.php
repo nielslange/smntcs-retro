@@ -7,8 +7,6 @@
  * @since 1.0.0
  */
 
-
-
 $args = array(
 	'walker'            => null,
 	'max_depth'         => '',
@@ -22,11 +20,17 @@ $args = array(
 	'avatar_size'       => 32,
 	'reverse_top_level' => null,
 	'reverse_children'  => '',
-	'format'            => 'html5', // or 'xhtml' if no 'HTML5' theme support
-	'short_ping'        => false,   // @since 3.6
-	'echo'              => true     // boolean, default is true
+	'format'            => 'html5',
+	'short_ping'        => false,
+	'echo'              => true,
 );
 
-wp_list_comments();
+print( '<ul class="comment-list">' );
+wp_list_comments( $args );
+print( '<ul>' );
+
+paginate_comments_links();
+
+print( '<hr>' );
 
 comment_form();

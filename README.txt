@@ -5,8 +5,8 @@ Requires at least: 4.7
 Tested up to: WordPress 5.3
 Requires PHP: 5.6
 Stable tag: 1.0
-License: GPL-3.0-or-later  
-License URI: https://spdx.org/licenses/GPL-3.0-or-later.html  
+License: GPLv3 or later  
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html  
 
 📟 Retro is a minimalistic theme for the average nerd
 
@@ -26,20 +26,21 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 Retro bundles the following third-party resources:
 
+**Font: Hack**
+
+- License: MIT License, https://opensource.org/licenses/MIT  
+- URL: https://github.com/source-foundry/Hack/  
+
 **normalize.css**  
 
 - License: MIT License, https://opensource.org/licenses/MIT  
 - URL: https://github.com/necolas/normalize.css/  
 
-**Font: DejaVu Sans Mono**
+**Screenshot: Retro style cassette**
 
-- License: Bitstream Vera Fonts, https://www.gnome.org/fonts/  
-- URL: https://github.com/maxwell-k/dejavu-sans-mono-web-font/  
-
-**Font: Hack**
-
-- License: MIT License, https://opensource.org/licenses/MIT  
-- URL: https://github.com/source-foundry/Hack/  
+- [Retro style cassette](https://unsplash.com/photos/FZWivbri0Xk) by [Namroud Gorguis](https://unsplash.com/@namroud)
+- License: Unsplash License, https://unsplash.com/license
+- URL: https://unsplash.com/photos/FZWivbri0Xk
 
 == Changelog ==
 

@@ -27,7 +27,9 @@ function retro_post_catgories() {
 
 	$data = get_the_category();
 
-	if ( empty ( $data ) ) return;
+	if ( empty( $data ) ) {
+		return;
+	}
 
 	foreach ( $data as $item ) {
 		$items[] = sprintf( '<a href="%1$s" title="%2$s">%2$s</a>', get_term_link( $item->term_id ), $item->name );
@@ -50,6 +52,8 @@ function retro_post_catgories() {
 function retro_post_content() {
 
 	the_content();
+
+	wp_link_pages();
 
 }
 
@@ -101,7 +105,9 @@ function retro_post_tags() {
 
 	$data = get_the_tags();
 
-	if ( empty ( $data ) ) return;
+	if ( empty( $data ) ) {
+		return;
+	}
 
 	foreach ( $data as $item ) {
 		$items[] = sprintf( '<a href="%1$s" title="%2$s">%2$s</a>', get_term_link( $item->term_id ), $item->name );
@@ -125,7 +131,9 @@ function retro_post_title() {
 
 	$data = get_the_title();
 
-	if ( empty ( $data ) ) return;
+	if ( empty( $data ) ) {
+		return;
+	}
 
 	if ( is_single() ) {
 		$wrapper = '<h1 class="post-title">%s</h1><!-- .site-title -->';
@@ -150,7 +158,9 @@ function retro_site_description() {
 
 	$data = get_bloginfo( 'description' );
 
-	if ( empty ( $data ) ) return;
+	if ( empty( $data ) ) {
+		return;
+	}
 
 	$wrapper = '<div id="site-description"><h2>%s</h2></div><!-- #site-description -->';
 	$html    = sprintf( $wrapper, esc_html( $data ) );
@@ -193,18 +203,19 @@ function retro_site_title() {
 
 	$data = get_bloginfo();
 
-	if ( empty ( $data ) ) return;
+	if ( empty( $data ) ) {
+		return;
+	}
 
 	if ( is_single() ) {
 		$wrapper = '<div id="site-title"><h2><a href="/">%s</a></h2></div><!-- #site-title -->';
 	} else {
 		$wrapper = '<div id="site-title"><h1><a href="/">%s</a></h1></div><!-- #site-title -->';
 	}
-	
-	$html    = sprintf( $wrapper, esc_html( $data ) );
-	$html    = apply_filters( 'retro_site_title', $html, $data, $wrapper );
+
+	$html = sprintf( $wrapper, esc_html( $data ) );
+	$html = apply_filters( 'retro_site_title', $html, $data, $wrapper );
 
 	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
-
