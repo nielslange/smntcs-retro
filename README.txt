@@ -26,24 +26,24 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 Retro bundles the following third-party resources:
 
-**Font: Hack**
+=== CSS: Nord ===
+* License: MIT License, https://opensource.org/licenses/MIT  
+* URL: http://nordtheme.com/
 
-- License: MIT License, https://opensource.org/licenses/MIT  
-- URL: https://github.com/source-foundry/Hack/  
+=== CSS: normalize.css ===
+* License: MIT License, https://opensource.org/licenses/MIT  
+* URL: https://github.com/necolas/normalize.css/  
 
-**normalize.css**  
+=== Font: Hack ===
+* License: MIT License, https://opensource.org/licenses/MIT  
+* URL: https://github.com/source-foundry/Hack/  
 
-- License: MIT License, https://opensource.org/licenses/MIT  
-- URL: https://github.com/necolas/normalize.css/  
-
-**Screenshot: Retro style cassette**
-
-- [Retro style cassette](https://unsplash.com/photos/FZWivbri0Xk) by [Namroud Gorguis](https://unsplash.com/@namroud)
-- License: Unsplash License, https://unsplash.com/license
-- URL: https://unsplash.com/photos/FZWivbri0Xk
+=== Screenshot: Retro style cassette ===
+* [Retro style cassette](https://unsplash.com/photos/FZWivbri0Xk) by [Namroud Gorguis](https://unsplash.com/@namroud)
+* License: Unsplash License, https://unsplash.com/license
+* URL: https://unsplash.com/photos/FZWivbri0Xk
 
 == Changelog ==
 
 === 1.0 (xxxx.xx.xx) ===
-
-*  Initial release
+* Initial release

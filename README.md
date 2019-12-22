@@ -36,15 +36,17 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 Retro bundles the following third-party resources:
 
-**Font: Hack**
-
+**CSS: Nord**
 - License: MIT License, https://opensource.org/licenses/MIT  
-- URL: https://github.com/source-foundry/Hack/  
+- URL: http://nordtheme.com/
 
-**normalize.css**  
-
+**CSS: normalize.css**  
 - License: MIT License, https://opensource.org/licenses/MIT  
 - URL: https://github.com/necolas/normalize.css/  
+
+**Font: Hack**
+- License: MIT License, https://opensource.org/licenses/MIT  
+- URL: https://github.com/source-foundry/Hack/  
 
 **Screenshot: Retro style cassette**
 
