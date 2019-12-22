@@ -38,14 +38,31 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
  ******************************************************************************/
 
 :root {
-	--errie-black: #2c2c2c;
-	--onyx: #343a44;
-	--blue: #6aa0c4;
-	--green: #8f9e6a;
-	--grey: #333;
-	--red: #b24c4f;
-	--white: #d9d9d9;
-	--yellow: #efc074;
+
+	/* Polar Night */
+	--nord0: #2e3440;
+	--nord1: #3b4252;
+	--nord2: #434c5e;
+	--nord3: #4c566a;
+
+	/* Snow Storm */
+	--nord4: #d8dee9;
+	--nord5: #e5e9f0;
+	--nord6: #eceff4;
+
+	/* Frost */
+	--nord7: #8fbcbb;
+	--nord8: #88c0d0;
+	--nord9: #81a1c1;
+	--nord10: #5e81ac;
+
+	/* Aurora */
+	--nord11: #bf616a;
+	--nord12: #d08770;
+	--nord13: #ebcb8b;
+	--nord14: #a3be8c;
+	--nord15: #b48ead;
+
 }
 
 @font-face {
@@ -81,12 +98,12 @@ html {
 }
 
 body {
-	background: var(--onyx);
+	background: var(--nord0);
 	box-sizing: content-box;
-	color: var(--white);
+	color: var(--nord9);
 	font-family: Hack, monospace;
 	font-size: 1.3rem;
-	line-height: 1.3;
+	line-height: 1.4;
 	text-align: left;
 	padding: 1rem 2rem;
 	max-width: 580px;
@@ -110,7 +127,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--green);
+	color: var(--nord4);
 	font-weight: 400;
 	font-size: 1.8rem;
 	line-height: normal;
@@ -121,7 +138,7 @@ h6 {
 }
 
 a {
-	color: var(--blue);
+	color: var(--nord4);
 	text-decoration: none;
 	border-bottom: 1px dotted;
 }
@@ -137,7 +154,7 @@ hr {
 	color: transparent;
 	border-color: transparent;
 	background-color: transparent;
-	border-top: 1px solid var(--green);
+	border-top: 1px solid var(--nord3);
 }
 
 /*******************************************************************************
@@ -145,16 +162,16 @@ hr {
  ******************************************************************************/
 
 .wp-caption {
-	color: var(--white);
+	color: var(--nord4);
 }
 
 .wp-caption-text {
-	color: var(--white);
+	color: var(--nord4);
 }
 
 .sticky {
-	background: var(--errie-black);
-	border: 1px solid var(--grey);
+	background: var(--nord1);
+	border: 1px solid var(--nord2);
 	padding: 1em;
 	margin: 0 -1em;
 }
@@ -197,7 +214,7 @@ hr {
 }
 
 .gallery-caption {
-	color: var(--white);
+	color: var(--nord4);
 }
 
 .bypostauthor {
@@ -226,7 +243,7 @@ hr {
  ******************************************************************************/
 
 .wp-block-image figcaption {
-	color: var(--yellow);
+	color: var(--nord4);
 }
 
 figure {
@@ -246,12 +263,12 @@ figure {
 
 #site-title h1,
 #site-title h2 {
-	color: var(--green);
+	color: var(--nord14);
 	margin-bottom: 0.5em;
 }
 
 #site-description h2 {
-	color: var(--green);
+	color: var(--nord14);
 	margin: 0 0 0.5rem;
 }
 
@@ -303,10 +320,10 @@ article p:first-of-type {
 }
 
 .comment-form .comment-form-comment textarea {
-	background: var(--errie-black);
-	border-color: var(--blue);
+	background: var(--nord0);
+	border-color: var(--nord10);
 	box-sizing: border-box;
-	color: var(--blue);
+	color: var(--nord10);
 	padding: 0.5em 1em;
 	width: 100%;
 }
@@ -316,10 +333,10 @@ article p:first-of-type {
 }
 
 .comment-form .form-submit input[type="submit"] {
-	background: var(--errie-black);
-	border-color: var(--blue);
+	background: var(--nord0);
+	border-color: var(--nord10);
 	box-sizing: border-box;
-	color: var(--blue);
+	color: var(--nord10);
 	padding: 0.5em 1em;
 	width: 100%;
 }
@@ -329,5 +346,5 @@ article p:first-of-type {
  ******************************************************************************/
 
 #site-footer {
-	color: var(--green);
+	color: var(--nord14);
 }
