@@ -3,7 +3,7 @@
  * Custom template tags for this theme.
  *
  * @package WordPress
- * @subpackage Retro
+ * @subpackage SMNTCS Retro
  * @since 1.0.0
  */
 
@@ -14,8 +14,17 @@
  */
 function retro_post_author() {
 
-	echo 'AUTHOR';
+	$data = get_the_author();
 
+	if ( empty( $data ) ) {
+		return;
+	}
+
+	$label   = __( 'Author:', 'retro' );
+	$wrapper = '<div class="post-author">%s %s</div><!-- .post-author -->';
+	$html    = sprintf( $wrapper, $label, $data );
+
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 }
 
 /**
@@ -177,7 +186,7 @@ function retro_site_description() {
  */
 function retro_site_footer() {
 
-	$data[] = date( 'Y' );
+	$data[] = gmdate( 'Y' );
 	$data[] = get_bloginfo();
 	$data[] = esc_html__( 'All rights reserved', 'retro' );
 	$data[] = sprintf(

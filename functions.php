@@ -1,11 +1,11 @@
 <?php
 /**
- * Retro functions and definitions
+ * SMNTCS Retro functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package WordPress
- * @subpackage Retro
+ * @subpackage SMNTCS Retro
  * @since 1.0.0
  */
 
@@ -139,6 +139,30 @@ function retro_menus() {
 
 add_action( 'init', 'retro_menus' );
 
+/**
+ * Register footer widget section
+ *
+ * @since 1.0.0
+ */
+function retro_sidebars() {
+
+	register_sidebar(
+		array(
+			'id'            => 'footer-sidebar',
+			'name'          => __( 'Footer Sidebar', 'retro' ),
+			'description'   => __( 'Add widgets to the footer sidebar.', 'retro' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+}
+
+add_action( 'widgets_init', 'retro_sidebars' );
+
+
 if ( ! function_exists( 'retro_wp_body_open' ) ) {
 
 	/**
@@ -157,7 +181,9 @@ if ( ! function_exists( 'retro_wp_body_open' ) ) {
  * @since 1.0.0
  */
 function retro_skip_link() {
-	echo '<a class="skip-link screen-reader-text" href="#corpus">' . __( 'Skip to the content', 'retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
+	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
 }
 
 add_action( 'retro_wp_body_open', 'retro_skip_link', 5 );
+
+

@@ -18,9 +18,9 @@ get_header();
 
 ?>
 
-<main id="corpus" role="main">
+<main id="site-content" role="main">
 
-	<section id="corpus-posts">
+	<section id="site-content-posts">
 
 		<?php
 
@@ -33,15 +33,15 @@ get_header();
 
 		?>
 
-	</section><!-- #corpus-posts -->
+	</section><!-- #site-content-posts -->
 
-	<div class="corpus-pagination">
+	<div class="site-content-pagination">
 
 		<?php the_posts_pagination(); ?>
 
-	</div><!-- #corpus-pagination -->
+	</div><!-- #site-content-pagination -->
 
-</main><!-- #corpus -->
+</main><!-- #site-content -->
 
 <?php
 

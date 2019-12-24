@@ -3,14 +3,13 @@ Theme Name: Retro
 Theme URI: https://github.com/nielslange/retro/
 Author: Niels Lange
 Author URI: https://nielslange.de/
-Description: 📟 Retro is a minimalistic theme for the average nerd.
+Description: 📟 SMNTCS Retro is a minimalistic theme for the average nerd.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: reboot
 Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 */
-
 /*******************************************************************************
  *
  * TABLE OF CONTENTS
@@ -26,43 +25,35 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
  * 8. Footer
  *
  ******************************************************************************/
-
 /*******************************************************************************
  * 0. Normalize styles
  ******************************************************************************/
-
 @import "assets/css/normalize.css";
 
 /*******************************************************************************
  * 1. Document styles
  ******************************************************************************/
-
 :root {
-
 	/* Polar Night */
 	--nord0: #2e3440;
 	--nord1: #3b4252;
 	--nord2: #434c5e;
 	--nord3: #4c566a;
-
 	/* Snow Storm */
 	--nord4: #d8dee9;
 	--nord5: #e5e9f0;
 	--nord6: #eceff4;
-
 	/* Frost */
 	--nord7: #8fbcbb;
 	--nord8: #88c0d0;
 	--nord9: #81a1c1;
 	--nord10: #5e81ac;
-
 	/* Aurora */
 	--nord11: #bf616a;
 	--nord12: #d08770;
 	--nord13: #ebcb8b;
 	--nord14: #a3be8c;
 	--nord15: #b48ead;
-
 }
 
 @font-face {
@@ -94,7 +85,8 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
 }
 
 html {
-	font-size: 62.5%; /* 1rem = 10px */
+	font-size: 62.5%;
+	/* 1rem = 10px */
 }
 
 body {
@@ -160,7 +152,6 @@ hr {
 /*******************************************************************************
  * 2. Required styles
  ******************************************************************************/
-
 .wp-caption {
 	color: var(--nord4);
 }
@@ -241,7 +232,6 @@ hr {
 /*******************************************************************************
  * 3. Block styles
  ******************************************************************************/
-
 .wp-block-image figcaption {
 	color: var(--nord4);
 }
@@ -260,22 +250,20 @@ figure {
 /*******************************************************************************
  * 4. Header
  ******************************************************************************/
-
 #site-title h1,
 #site-title h2 {
-	color: var(--nord14);
+	color: var(--nord4);
 	margin-bottom: 0.5em;
 }
 
 #site-description h2 {
-	color: var(--nord14);
+	color: var(--nord4);
 	margin: 0 0 0.5rem;
 }
 
 /*******************************************************************************
  * 5. Menus
  ******************************************************************************/
-
 .menu {
 	margin: 1em 0;
 	padding: 0;
@@ -303,13 +291,15 @@ article p:first-of-type {
 /*******************************************************************************
  * 6. Pages
  ******************************************************************************/
-
 /*******************************************************************************
  * 7. Posts
  ******************************************************************************/
+/* Articles ************************************/
+#site-content-posts article {
+	margin: 2em 0 4em;
+}
 
 /* Comments ************************************/
-
 .comment-form label {
 	display: block;
 	margin-bottom: 1em;
@@ -341,10 +331,22 @@ article p:first-of-type {
 	width: 100%;
 }
 
-/*******************************************************************************
- * 7. Posts
- ******************************************************************************/
+/* Pagination **********************************/
+.site-content-pagination {
+	margin: 2em 0;
+}
 
+/*******************************************************************************
+ * 8. Footer
+ ******************************************************************************/
 #site-footer {
 	color: var(--nord14);
+}
+
+#footer-widget-wrapper {
+	margin-bottom: 1em;
+}
+
+#footer-credits-wrapper {
+	margin-bottom: 1em;
 }

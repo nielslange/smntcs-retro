@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
-<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="Retro Coding Standards" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="SMNTCS Retro Coding Standards" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 
   <!-- See https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml -->
   <!-- See https://github.com/WordPress/WordPress-Coding-Standards/blob/develop/.phpcs.xml.dist -->
 
   <!-- Set a description for this ruleset. -->
-  <description>Coding standards used for checking the Retro theme.</description>
+  <description>Coding standards used for checking the SMNTCS Retro theme.</description>
 
   <!-- Check the entire theme. -->
   <file>.</file>

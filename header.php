@@ -1,11 +1,11 @@
 <?php
 /**
- * The template file to display the header of the Retro theme.
+ * The template file to display the header of the SMNTCS Retro theme.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage Retro
+ * @subpackage SMNTCS Retro
  * @since 1.0.0
  */
 
