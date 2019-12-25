@@ -82,7 +82,7 @@ function smntcs_retro_theme_support() {
 	 *
 	 * @link https://developer.wordpress.org/reference/functions/load_theme_textdomain/
 	 */
-	load_theme_textdomain( 'retro' );
+	load_theme_textdomain( 'smntcs-retro' );
 
 }
 
