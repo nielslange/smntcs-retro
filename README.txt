@@ -4,7 +4,7 @@ Contributors: nielslange
 Requires at least: 4.7
 Tested up to: WordPress 5.3
 Requires PHP: 5.6
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv3 or later  
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html  
 
@@ -28,7 +28,7 @@ SMNTCS Retro bundles the following third-party resources:
 
 === CSS: Nord ===
 * License: MIT License, https://opensource.org/licenses/MIT  
-* URL: http://nordtheme.com/
+* URL: https://github.com/arcticicestudio/nord
 
 === CSS: normalize.css ===
 * License: MIT License, https://opensource.org/licenses/MIT  
@@ -40,5 +40,9 @@ SMNTCS Retro bundles the following third-party resources:
 
 == Changelog ==
 
-=== 1.0 (xxxx.xx.xx) ===
-* Initial release
+=== 1.1 (2019.12.25) ===
+* Replace screenshot
+* Update prefixes
+
+=== 1.0 (2019.12.24) ===
+* Initial version
