@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage SMNTCS Retro
+ * @subpackage SMNTCS_Retro
  * @since 1.0.0
  */
 
@@ -30,8 +30,8 @@
 
 			<div id="header-title">
 
-				<?php retro_site_title(); ?>
-				<?php retro_site_description(); ?>
+				<?php smntcs_retro_site_title(); ?>
+				<?php smntcs_retro_site_description(); ?>
 
 			</div><!-- #header-title -->
 

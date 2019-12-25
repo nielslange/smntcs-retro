@@ -3,7 +3,7 @@
  * Custom template tags for this theme.
  *
  * @package WordPress
- * @subpackage SMNTCS Retro
+ * @subpackage SMNTCS_Retro
  * @since 1.0.0
  */
 
@@ -12,7 +12,7 @@
  *
  * @since 1.0.0
  */
-function retro_post_author() {
+function smntcs_retro_post_author() {
 
 	$data = get_the_author();
 
@@ -24,7 +24,7 @@ function retro_post_author() {
 	$wrapper = '<div class="post-author">%s %s</div><!-- .post-author -->';
 	$html    = sprintf( $wrapper, $label, $data );
 
-	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo esc_html( $html );
 }
 
 /**
@@ -32,7 +32,7 @@ function retro_post_author() {
  *
  * @since 1.0.0
  */
-function retro_post_catgories() {
+function smntcs_retro_post_catgories() {
 
 	$data = get_the_category();
 
@@ -47,9 +47,9 @@ function retro_post_catgories() {
 	$label   = __( 'Categories:', 'retro' );
 	$wrapper = '<div class="post-cateories">%s %s</div><!-- .post-cateories -->';
 	$html    = sprintf( $wrapper, $label, implode( ', ', $items ) );
-	$html    = apply_filters( 'retro_post_catgories', $html, $data, $wrapper );
+	$html    = apply_filters( 'smntcs_retro_post_catgories', $html, $data, $wrapper );
 
-	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo esc_html( $html );
 
 }
 
@@ -58,7 +58,7 @@ function retro_post_catgories() {
  *
  * @since 1.0.0
  */
-function retro_post_content() {
+function smntcs_retro_post_content() {
 
 	the_content();
 
@@ -71,7 +71,7 @@ function retro_post_content() {
  *
  * @since 1.0.0
  */
-function retro_post_comments() {
+function smntcs_retro_post_comments() {
 
 	comments_template();
 
@@ -82,15 +82,15 @@ function retro_post_comments() {
  *
  * @since 1.0.0
  */
-function retro_post_date() {
+function smntcs_retro_post_date() {
 
 	$data    = get_the_date();
 	$label   = __( 'Date:', 'retro' );
 	$wrapper = '<div class="post-date">%s %s</div><!-- .post-date -->';
 	$html    = sprintf( $wrapper, $label, $data );
-	$html    = apply_filters( 'retro_post_date', $html, $data, $wrapper );
+	$html    = apply_filters( 'smntcs_retro_post_date', $html, $data, $wrapper );
 
-	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo esc_html( $html );
 
 }
 
@@ -99,7 +99,7 @@ function retro_post_date() {
  *
  * @since 1.0.0
  */
-function retro_post_edit_link() {
+function smntcs_retro_post_edit_link() {
 
 	edit_post_link( null, '<div class="edit-post">', '</div><!-- .edit-post -->' );
 
@@ -110,7 +110,7 @@ function retro_post_edit_link() {
  *
  * @since 1.0.0
  */
-function retro_post_tags() {
+function smntcs_retro_post_tags() {
 
 	$data = get_the_tags();
 
@@ -125,9 +125,9 @@ function retro_post_tags() {
 	$label   = __( 'Tags:', 'retro' );
 	$wrapper = '<div class="post-tags">%s %s</div><!-- .post-tags -->';
 	$html    = sprintf( $wrapper, $label, implode( ', ', $items ) );
-	$html    = apply_filters( 'retro_post_tags', $html, $data, $wrapper );
+	$html    = apply_filters( 'smntcs_retro_post_tags', $html, $data, $wrapper );
 
-	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo esc_html( $html );
 
 }
 
@@ -136,7 +136,7 @@ function retro_post_tags() {
  *
  * @since 1.0.0
  */
-function retro_post_title() {
+function smntcs_retro_post_title() {
 
 	$data = get_the_title();
 
@@ -152,9 +152,9 @@ function retro_post_title() {
 		$html    = sprintf( $wrapper, get_permalink( get_the_ID() ), esc_html( $data ) );
 	}
 
-	$html = apply_filters( 'retro_post_title', $html, $data, $wrapper );
+	$html = apply_filters( 'smntcs_retro_post_title', $html, $data, $wrapper );
 
-	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo esc_html( $html );
 
 }
 
@@ -163,7 +163,7 @@ function retro_post_title() {
  *
  * @since 1.0.0
  */
-function retro_site_description() {
+function smntcs_retro_site_description() {
 
 	$data = get_bloginfo( 'description' );
 
@@ -173,9 +173,9 @@ function retro_site_description() {
 
 	$wrapper = '<div id="site-description"><h2>%s</h2></div><!-- #site-description -->';
 	$html    = sprintf( $wrapper, esc_html( $data ) );
-	$html    = apply_filters( 'retro_site_description', $html, $data, $wrapper );
+	$html    = apply_filters( 'smntcs_retro_site_description', $html, $data, $wrapper );
 
-	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo esc_html( $html );
 
 }
 
@@ -184,7 +184,7 @@ function retro_site_description() {
  *
  * @since 1.0.0
  */
-function retro_site_footer() {
+function smntcs_retro_site_footer() {
 
 	$data[] = gmdate( 'Y' );
 	$data[] = get_bloginfo();
@@ -197,9 +197,9 @@ function retro_site_footer() {
 
 	$wrapper = '<div id="site-footer">&copy; %s %s. %s. %s.</div><!--#site-footer -->';
 	$html    = sprintf( $wrapper, $data[0], $data[1], $data[2], $data[3] );
-	$html    = apply_filters( 'retro_site_footer', $html, $data, $wrapper );
+	$html    = apply_filters( 'smntcs_retro_site_footer', $html, $data, $wrapper );
 
-	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo esc_html( $html );
 
 }
 
@@ -208,7 +208,7 @@ function retro_site_footer() {
  *
  * @since 1.0.0
  */
-function retro_site_title() {
+function smntcs_retro_site_title() {
 
 	$data = get_bloginfo();
 
@@ -223,8 +223,8 @@ function retro_site_title() {
 	}
 
 	$html = sprintf( $wrapper, esc_html( $data ) );
-	$html = apply_filters( 'retro_site_title', $html, $data, $wrapper );
+	$html = apply_filters( 'smntcs_retro_site_title', $html, $data, $wrapper );
 
-	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	echo esc_html( $html );
 
 }

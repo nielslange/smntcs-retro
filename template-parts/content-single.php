@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package WordPress
- * @subpackage SMNTCS Retro
+ * @subpackage SMNTCS_Retro
  * @since 1.0.0
  */
 
@@ -18,33 +18,33 @@
 <?php
 
 // Display the post title.
-retro_post_title();
+smntcs_retro_post_title();
 
 // Display the post featured image.
 the_post_thumbnail();
 
 // Display the post author.
-retro_post_author();
+smntcs_retro_post_author();
 
 // Display the post date.
-retro_post_date();
+smntcs_retro_post_date();
 
 // Display the post tags.
-retro_post_tags();
+smntcs_retro_post_tags();
 
 // Display the post categories.
-retro_post_catgories();
+smntcs_retro_post_catgories();
 
 echo '<br>';
 
 // Display the post content.
-retro_post_content();
+smntcs_retro_post_content();
 
 // Display the post edit link.
-retro_post_edit_link();
+smntcs_retro_post_edit_link();
 
 // Display the post comments.
-retro_post_comments()
+smntcs_retro_post_comments()
 
 ?>
 

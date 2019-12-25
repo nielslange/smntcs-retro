@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package WordPress
- * @subpackage SMNTCS Retro
+ * @subpackage SMNTCS_Retro
  * @since 1.0.0
  */
 
@@ -46,7 +46,7 @@
 
 			<div id="footer-credits-wrapper">
 
-				<?php retro_site_footer(); ?>
+				<?php smntcs_retro_site_footer(); ?>
 
 			</div><!-- #footer-credits-wrapper -->
 

@@ -3,7 +3,7 @@
  * The template file for displaying the comments and comment form.
  *
  * @package WordPress
- * @subpackage SMNTCS Retro
+ * @subpackage SMNTCS_Retro
  * @since 1.0.0
  */
 
@@ -14,7 +14,7 @@ $args = array(
 	'callback'          => null,
 	'end-callback'      => null,
 	'type'              => 'all',
-	'reply_text'        => 'Reply',
+	'reply_text'        => __( 'Reply', 'smntcs_retro' ),
 	'page'              => '',
 	'per_page'          => '',
 	'avatar_size'       => 32,
@@ -25,7 +25,7 @@ $args = array(
 	'echo'              => true,
 );
 
-print( '<ul class="comment-list-foo">' );
+print( '<ul class="comment-list">' );
 wp_list_comments( $args );
 print( '</ul>' );
 

@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package WordPress
- * @subpackage SMNTCS Retro
+ * @subpackage SMNTCS_Retro
  * @since 1.0.0
  */
 
@@ -18,7 +18,7 @@
  *
  * @since 1.0.0
  */
-function retro_theme_support() {
+function smntcs_retro_theme_support() {
 
 	/**
 	 * Add default posts and comments RSS feed links to head.
@@ -86,7 +86,7 @@ function retro_theme_support() {
 
 }
 
-add_action( 'after_setup_theme', 'retro_theme_support' );
+add_action( 'after_setup_theme', 'smntcs_retro_theme_support' );
 
 /**
  * Include required files.
@@ -98,21 +98,21 @@ require get_template_directory() . '/inc/template-tags.php';
  *
  * @since 1.0.0
  */
-function retro_register_styles() {
+function smntcs_retro_register_styles() {
 
 	wp_enqueue_style( 'retro-style', get_stylesheet_uri(), null, time() );
 	wp_style_add_data( 'retro-style', 'rtl', 'replace' );
 
 }
 
-add_action( 'wp_enqueue_scripts', 'retro_register_styles' );
+add_action( 'wp_enqueue_scripts', 'smntcs_retro_register_styles' );
 
 /**
  * Register and enqueue scripts.
  *
  * @since 1.0.0
  */
-function retro_register_scripts() {
+function smntcs_retro_register_scripts() {
 
 	if ( ( ! is_admin() ) && is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -120,14 +120,14 @@ function retro_register_scripts() {
 
 }
 
-add_action( 'wp_enqueue_scripts', 'retro_register_scripts' );
+add_action( 'wp_enqueue_scripts', 'smntcs_retro_register_scripts' );
 
 /**
  * Register navigation menu.
  *
  * @since 1.0.0
  */
-function retro_menus() {
+function smntcs_retro_menus() {
 
 	$locations = array(
 		'primary' => __( 'Primary Menu', 'retro' ),
@@ -137,14 +137,14 @@ function retro_menus() {
 	register_nav_menus( $locations );
 }
 
-add_action( 'init', 'retro_menus' );
+add_action( 'init', 'smntcs_retro_menus' );
 
 /**
  * Register footer widget section
  *
  * @since 1.0.0
  */
-function retro_sidebars() {
+function smntcs_retro_sidebars() {
 
 	register_sidebar(
 		array(
@@ -160,18 +160,18 @@ function retro_sidebars() {
 
 }
 
-add_action( 'widgets_init', 'retro_sidebars' );
+add_action( 'widgets_init', 'smntcs_retro_sidebars' );
 
 
-if ( ! function_exists( 'retro_wp_body_open' ) ) {
+if ( ! function_exists( 'smntcs_retro_wp_body_open' ) ) {
 
 	/**
 	 * Shim for wp_body_open, ensuring backwards compatibility with versions of WordPress older than 5.2.
 	 *
 	 * @since 1.0.0
 	 */
-	function retro_wp_body_open() {
-		do_action( 'retro_wp_body_open' );
+	function smntcs_retro_wp_body_open() {
+		do_action( 'smntcs_retro_wp_body_open' );
 	}
 }
 
@@ -180,10 +180,10 @@ if ( ! function_exists( 'retro_wp_body_open' ) ) {
  *
  * @since 1.0.0
  */
-function retro_skip_link() {
+function smntcs_retro_skip_link() {
 	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
 }
 
-add_action( 'retro_wp_body_open', 'retro_skip_link', 5 );
+add_action( 'smntcs_retro_wp_body_open', 'smntcs_retro_skip_link', 5 );
 
 
