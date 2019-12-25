@@ -20,7 +20,7 @@ function smntcs_retro_post_author() {
 		return;
 	}
 
-	$label   = esc_html__( 'Author:', 'retro' );
+	$label   = esc_html__( 'Author:', 'smntcs-retro' );
 	$wrapper = '<div class="post-author">%s %s</div><!-- .post-author -->';
 	$html    = sprintf( $wrapper, $label, $data );
 
@@ -45,7 +45,7 @@ function smntcs_retro_post_catgories() {
 		$items[] = sprintf( '<a href="%1$s" title="%2$s">%2$s</a>', get_term_link( $item->term_id ), $item->name );
 	}
 
-	$label   = __( 'Categories:', 'retro' );
+	$label   = __( 'Categories:', 'smntcs-retro' );
 	$wrapper = '<div class="post-cateories">%s %s</div><!-- .post-cateories -->';
 	$html    = sprintf( $wrapper, $label, implode( ', ', $items ) );
 	$html    = apply_filters( 'smntcs_retro_post_catgories', $html, $data, $wrapper );
@@ -86,7 +86,7 @@ function smntcs_retro_post_comments() {
 function smntcs_retro_post_date() {
 
 	$data    = get_the_date();
-	$label   = __( 'Date:', 'retro' );
+	$label   = __( 'Date:', 'smntcs-retro' );
 	$wrapper = '<div class="post-date">%s %s</div><!-- .post-date -->';
 	$html    = sprintf( $wrapper, $label, $data );
 	$html    = apply_filters( 'smntcs_retro_post_date', $html, $data, $wrapper );
@@ -123,7 +123,7 @@ function smntcs_retro_post_tags() {
 		$items[] = sprintf( '<a href="%1$s" title="%2$s">%2$s</a>', get_term_link( $item->term_id ), $item->name );
 	}
 
-	$label   = __( 'Tags:', 'retro' );
+	$label   = __( 'Tags:', 'smntcs-retro' );
 	$wrapper = '<div class="post-tags">%s %s</div><!-- .post-tags -->';
 	$html    = sprintf( $wrapper, $label, implode( ', ', $items ) );
 	$html    = apply_filters( 'smntcs_retro_post_tags', $html, $data, $wrapper );
@@ -189,11 +189,11 @@ function smntcs_retro_site_footer() {
 
 	$data[] = gmdate( 'Y' );
 	$data[] = get_bloginfo();
-	$data[] = esc_html__( 'All rights reserved', 'retro' );
+	$data[] = esc_html__( 'All rights reserved', 'smntcs-retro' );
 	$data[] = sprintf(
 		'<a href="%s">%s</a>',
-		esc_url( __( 'https://wordpress.org/', 'retro' ) ),
-		esc_html__( 'Powered by WordPress', 'retro' )
+		esc_url( __( 'https://wordpress.org/', 'smntcs-retro' ) ),
+		esc_html__( 'Powered by WordPress', 'smntcs-retro' )
 	);
 
 	$wrapper = '<div id="site-footer">&copy; %s %s. %s. %s.</div><!--#site-footer -->';

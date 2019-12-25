@@ -130,8 +130,8 @@ add_action( 'wp_enqueue_scripts', 'smntcs_retro_register_scripts' );
 function smntcs_retro_menus() {
 
 	$locations = array(
-		'primary' => __( 'Primary Menu', 'retro' ),
-		'footer'  => __( 'Footer Menu', 'retro' ),
+		'primary' => __( 'Primary Menu', 'smntcs-retro' ),
+		'footer'  => __( 'Footer Menu', 'smntcs-retro' ),
 	);
 
 	register_nav_menus( $locations );
@@ -149,8 +149,8 @@ function smntcs_retro_sidebars() {
 	register_sidebar(
 		array(
 			'id'            => 'footer-sidebar',
-			'name'          => __( 'Footer Sidebar', 'retro' ),
-			'description'   => __( 'Add widgets to the footer sidebar.', 'retro' ),
+			'name'          => __( 'Footer Sidebar', 'smntcs-retro' ),
+			'description'   => __( 'Add widgets to the footer sidebar.', 'smntcs-retro' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
@@ -181,7 +181,7 @@ if ( ! function_exists( 'smntcs_retro_wp_body_open' ) ) {
  * @since 1.0.0
  */
 function smntcs_retro_skip_link() {
-	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
+	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'smntcs-retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
 }
 
 add_action( 'smntcs_retro_wp_body_open', 'smntcs_retro_skip_link', 5 );
