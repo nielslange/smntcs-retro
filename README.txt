@@ -38,11 +38,6 @@ SMNTCS Retro bundles the following third-party resources:
 * License: MIT License, https://opensource.org/licenses/MIT  
 * URL: https://github.com/source-foundry/Hack/  
 
-=== Screenshot: SMNTCS Retro style cassette ===
-* [SMNTCS Retro style cassette](https://unsplash.com/photos/FZWivbri0Xk) by [Namroud Gorguis](https://unsplash.com/@namroud)
-* License: Unsplash License, https://unsplash.com/license
-* URL: https://unsplash.com/photos/FZWivbri0Xk
-
 == Changelog ==
 
 === 1.0 (xxxx.xx.xx) ===
