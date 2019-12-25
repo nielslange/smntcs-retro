@@ -20,11 +20,12 @@ function smntcs_retro_post_author() {
 		return;
 	}
 
-	$label   = __( 'Author:', 'retro' );
+	$label   = esc_html__( 'Author:', 'retro' );
 	$wrapper = '<div class="post-author">%s %s</div><!-- .post-author -->';
 	$html    = sprintf( $wrapper, $label, $data );
 
-	echo esc_html( $html );
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
 }
 
 /**
@@ -49,7 +50,7 @@ function smntcs_retro_post_catgories() {
 	$html    = sprintf( $wrapper, $label, implode( ', ', $items ) );
 	$html    = apply_filters( 'smntcs_retro_post_catgories', $html, $data, $wrapper );
 
-	echo esc_html( $html );
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
 
@@ -90,7 +91,7 @@ function smntcs_retro_post_date() {
 	$html    = sprintf( $wrapper, $label, $data );
 	$html    = apply_filters( 'smntcs_retro_post_date', $html, $data, $wrapper );
 
-	echo esc_html( $html );
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
 
@@ -127,7 +128,7 @@ function smntcs_retro_post_tags() {
 	$html    = sprintf( $wrapper, $label, implode( ', ', $items ) );
 	$html    = apply_filters( 'smntcs_retro_post_tags', $html, $data, $wrapper );
 
-	echo esc_html( $html );
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
 
@@ -154,7 +155,7 @@ function smntcs_retro_post_title() {
 
 	$html = apply_filters( 'smntcs_retro_post_title', $html, $data, $wrapper );
 
-	echo esc_html( $html );
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
 
@@ -175,7 +176,7 @@ function smntcs_retro_site_description() {
 	$html    = sprintf( $wrapper, esc_html( $data ) );
 	$html    = apply_filters( 'smntcs_retro_site_description', $html, $data, $wrapper );
 
-	echo esc_html( $html );
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
 
@@ -199,7 +200,7 @@ function smntcs_retro_site_footer() {
 	$html    = sprintf( $wrapper, $data[0], $data[1], $data[2], $data[3] );
 	$html    = apply_filters( 'smntcs_retro_site_footer', $html, $data, $wrapper );
 
-	echo esc_html( $html );
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
 
@@ -225,6 +226,6 @@ function smntcs_retro_site_title() {
 	$html = sprintf( $wrapper, esc_html( $data ) );
 	$html = apply_filters( 'smntcs_retro_site_title', $html, $data, $wrapper );
 
-	echo esc_html( $html );
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
