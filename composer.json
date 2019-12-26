@@ -1,5 +1,5 @@
 {
-	"name": "nielslange/retro",
+	"name": "nielslange/smntcs-retro",
 	"type": "package",
 	"description": "📟 SMNTCS Retro is a minimalistic theme for the average nerd",
 	"keywords": [
@@ -7,7 +7,7 @@
 		"Themes",
 		"SMNTCS Retro"
 	],
-	"homepage": "https://github.com/nielslange/retro",
+	"homepage": "https://github.com/nielslange/smntcs-retro",
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
@@ -33,7 +33,7 @@
 		"lint": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor ."
 	},
 	"support": {
-		"issues": "https://github.com/nielslange/retro/issues",
-		"source": "https://github.com/nielslange/retro"
+		"issues": "https://github.com/nielslange/smntcs-retro/issues",
+		"source": "https://github.com/nielslange/smntcs-retro"
 	}
 }
