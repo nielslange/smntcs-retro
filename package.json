@@ -1,5 +1,5 @@
 {
-  "name": "retro",
+  "name": "smntcs-retro",
   "version": "1.0.0",
   "description": "📟 SMNTCS Retro is a minimalistic theme for the average nerd",
   "author": "Niels Lange",
@@ -9,13 +9,13 @@
     "Theme",
     "SMNTCS Retro"
   ],
-  "homepage": "https://github.com/nielslange/retro#readme",
+  "homepage": "https://github.com/nielslange/smntcs-retro#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nielslange/retro.git"
+    "url": "git+https://github.com/nielslange/smntcs-retro.git"
   },
   "bugs": {
-    "web": "https://github.com/nielslange/retro/issues"
+    "web": "https://github.com/nielslange/smntcs-retro/issues"
   },
   "dependencies": {},
   "devDependencies": {
