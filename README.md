@@ -1,11 +1,11 @@
-[![](https://api.travis-ci.com/nielslange/retro.svg?branch=master)](https://travis-ci.com/nielslange/retro/builds/) 
-[![](https://img.shields.io/github/issues/nielslange/retro.svg)](https://github.com/nielslange/retro/issues) 
-[![](https://img.shields.io/github/forks/nielslange/retro.svg)](https://github.com/nielslange/retro/network/members) 
-[![](https://img.shields.io/github/stars/nielslange/retro.svg)](https://github.com/nielslange/retro/stargazers) 
-[![](https://img.shields.io/github/license/nielslange/retro.svg)](https://github.com/nielslange/retro/blob/master/LICENSE) 
+[![](https://api.travis-ci.com/nielslange/smntcs-retro.svg?branch=master)](https://travis-ci.com/nielslange/smntcs-retro/builds/) 
+[![](https://img.shields.io/github/issues/nielslange/smntcs-smntcs-retro.svg)](https://github.com/nielslange/smntcs-retro/issues) 
+[![](https://img.shields.io/github/forks/nielslange/smntcs-retro.svg)](https://github.com/nielslange/smntcs-retro/network/members) 
+[![](https://img.shields.io/github/stars/nielslange/smntcs-retro.svg)](https://github.com/nielslange/smntcs-retro/stargazers) 
+[![](https://img.shields.io/github/license/nielslange/smntcs-retro.svg)](https://github.com/nielslange/smntcs-retro/blob/master/LICENSE) 
 
 **Theme Name:** SMNTCS Retro  
-**Theme URI:** https://wordpress.org/themes/retro/  
+**Theme URI:** https://wordpress.org/themes/smntcs-retro/  
 **Contributors:** Niels Lange  
 **Requires at least:** WordPress 4.7  
 **Version:** 1.0  
