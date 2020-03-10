@@ -38,12 +38,12 @@ SMNTCS Retro bundles the following third-party resources:
 == Changelog ==
 
 === 1.2 (2020.03.10) ===
-* Remove obsolete JS file
-* Remove LICENSE.txt in benefit of LICENSE
 * Adjust copyright information in README.txt
+* Adjust keyboard accessibility
 * Adjust screenshot measurements
 * Adjust textdomain
-* Adjust keyboard accessibility
+* Remove LICENSE.txt in benefit of LICENSE
+* Remove obsolete JS file
 
 === 1.1 (2019.12.25) ===
 * Replace screenshot
