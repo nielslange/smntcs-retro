@@ -85,7 +85,6 @@ function smntcs_retro_theme_support() {
 	load_theme_textdomain( 'smntcs-retro' );
 
 }
-
 add_action( 'after_setup_theme', 'smntcs_retro_theme_support' );
 
 /**
@@ -104,7 +103,6 @@ function smntcs_retro_register_styles() {
 	wp_style_add_data( 'retro-style', 'rtl', 'replace' );
 
 }
-
 add_action( 'wp_enqueue_scripts', 'smntcs_retro_register_styles' );
 
 /**
@@ -119,7 +117,6 @@ function smntcs_retro_register_scripts() {
 	}
 
 }
-
 add_action( 'wp_enqueue_scripts', 'smntcs_retro_register_scripts' );
 
 /**
@@ -136,7 +133,6 @@ function smntcs_retro_menus() {
 
 	register_nav_menus( $locations );
 }
-
 add_action( 'init', 'smntcs_retro_menus' );
 
 /**
@@ -159,19 +155,18 @@ function smntcs_retro_sidebars() {
 	);
 
 }
-
 add_action( 'widgets_init', 'smntcs_retro_sidebars' );
 
 
-if ( ! function_exists( 'smntcs_retro_wp_body_open' ) ) {
+if ( ! function_exists( 'wp_body_open' ) ) {
 
 	/**
 	 * Shim for wp_body_open, ensuring backwards compatibility with versions of WordPress older than 5.2.
 	 *
 	 * @since 1.0.0
 	 */
-	function smntcs_retro_wp_body_open() {
-		do_action( 'smntcs_retro_wp_body_open' );
+	function wp_body_open() {
+		do_action( 'wp_body_open' );
 	}
 }
 
@@ -183,7 +178,4 @@ if ( ! function_exists( 'smntcs_retro_wp_body_open' ) ) {
 function smntcs_retro_skip_link() {
 	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'smntcs-retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
 }
-
-add_action( 'smntcs_retro_wp_body_open', 'smntcs_retro_skip_link', 5 );
-
-
+add_action( 'wp_body_open', 'smntcs_retro_skip_link', 5 );
