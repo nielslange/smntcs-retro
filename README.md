@@ -8,14 +8,14 @@
 **Theme URI:** https://wordpress.org/themes/smntcs-retro/  
 **Contributors:** Niels Lange  
 **Requires at least:** WordPress 4.7  
-**Version:** 1.0  
+**Version:** 1.2  
 **License:** GPLv3 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html  
 **Tags:** blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
 
 ## Description
 
-📟 SMNTCS Retro is a minimalistic theme for the average nerd.
+SMNTCS Retro is a minimalistic theme for the average nerd.
 
 ## Installation
 
@@ -49,6 +49,13 @@ SMNTCS Retro bundles the following third-party resources:
 * URL: https://github.com/source-foundry/Hack/  
 
 ## Changelog
+
+### 1.2 (2020.03.10)
+* Remove obsolete JS file
+* Remove LICENSE.txt in benefit of LICENSE
+* Adjust copyright information in README.txt
+* Adjust screenshot measurements
+* Adjust textdomain
 
 ### 1.1 (2019.12.25)  
 * Replace screenshot
