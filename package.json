@@ -19,6 +19,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "archiver": "^3.1.1",
     "@wordpress/browserslist-config": "^2.6.0",
     "@wordpress/scripts": "^5.1.0",
     "autoprefixer": "^9.7.3",
@@ -34,6 +35,7 @@
     "build": "npm run build:vendor-prefixes && npm run build:rtl && stylelint style.css --fix && stylelint rtl.css --fix",
     "build:rtl": "rtlcss style.css rtl.css",
     "build:vendor-prefixes": "postcss -r --no-map style.css",
+    "archive": "node archive.js",
     "lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'",
     "lint:pkg-json": "wp-scripts lint-pkg-json"
   }
