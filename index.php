@@ -35,15 +35,15 @@ get_header();
 				}
 			}
 		} else {
-		?>
+			?>
 		<header class="page-header">
-			<h1 class="page-title"><?php _e( 'No search results found', 'smntcs-retro' ); ?></h1>
+			<h1 class="page-title"><?php esc_html_e( 'No search results found', 'smntcs-retro' ); ?></h1>
 		</header>
 
-		<p><?php _e( 'There are no results matching your search. Maybe try another search term?', 'smntcs-retro' ); ?></p>
+		<p><?php esc_html_e( 'There are no results matching your search. Maybe try another search term?', 'smntcs-retro' ); ?></p>
 
-		<?php get_search_form(); ?>
-		<?php
+			<?php get_search_form(); ?>
+			<?php
 		}
 
 		?>
