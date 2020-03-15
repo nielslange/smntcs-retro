@@ -22,39 +22,15 @@ get_header();
 
 	<section id="site-content-posts">
 
-		<?php
-
-		if ( have_posts() ) {
-			while ( have_posts() ) {
-				the_post();
-
-				if ( is_single() ) {
-					get_template_part( 'template-parts/content', get_post_type() );
-				} else {
-					get_template_part( 'template-parts/content', get_post_type() );
-				}
-			}
-		} else {
-			?>
 		<header class="page-header">
-			<h1 class="page-title"><?php esc_html_e( 'No search results found', 'smntcs-retro' ); ?></h1>
+			<h1 class="page-title"><?php esc_html_e( 'Page or post not found', 'smntcs-retro' ); ?></h1>
 		</header>
 
-		<p><?php esc_html_e( 'There are no results matching your search. Maybe try another search term?', 'smntcs-retro' ); ?></p>
+		<p><?php esc_html_e( 'This is somewhat embarrassing, isn’t it? It looks like nothing was found at this location. Maybe try a search?', 'smntcs-retro' ); ?></p>
 
-			<?php get_search_form(); ?>
-			<?php
-		}
-
-		?>
+		<?php get_search_form(); ?>
 
 	</section><!-- #site-content-posts -->
-
-	<div class="site-content-pagination">
-
-		<?php the_posts_pagination(); ?>
-
-	</div><!-- #site-content-pagination -->
 
 </main><!-- #site-content -->
 
