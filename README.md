@@ -32,6 +32,10 @@ This program is free software: you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
+## Limitations
+
+As SMNTCS Retro is a minimalistic theme, the menu is limited to one level. Multi-level menus cannot be accomplished with this theme.
+
 ## Resources
 
 SMNTCS Retro bundles the following third-party resources:

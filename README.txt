@@ -19,6 +19,10 @@ SMNTCS Retro is distributed under the terms of the GNU GPL
 
 SMNTCS Retro is a minimalistic theme for the average nerd.
 
+== Limitations ==
+
+As SMNTCS Retro is a minimalistic theme, the menu is limited to one level. Multi-level menus cannot be accomplished with this theme.
+
 == Resources ==
 
 SMNTCS Retro bundles the following third-party resources:
