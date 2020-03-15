@@ -314,6 +314,25 @@ article p:first-of-type {
 	margin: 2em 0 4em;
 }
 
+/* Search form *********************************/
+.search-form input[type="search"] {
+	background: var(--nord0);
+	border: 1px solid var(--nord10);
+	box-sizing: border-box;
+	color: var(--nord10);
+	padding: 0.5em 1em;
+	width: 49%;
+}
+
+.search-form input[type="submit"] {
+	background: var(--nord1);
+	border: 1px solid var(--nord10);
+	box-sizing: border-box;
+	color: var(--nord9);
+	padding: 0.5em 1em;
+	width: 49%;
+}
+
 /* Comments ************************************/
 .comment-form label {
 	display: block;
@@ -338,10 +357,10 @@ article p:first-of-type {
 }
 
 .comment-form .form-submit input[type="submit"] {
-	background: var(--nord0);
+	background: var(--nord1);
 	border-color: var(--nord10);
 	box-sizing: border-box;
-	color: var(--nord10);
+	color: var(--nord9);
 	padding: 0.5em 1em;
 	width: 100%;
 }
