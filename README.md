@@ -8,7 +8,7 @@
 **Theme URI:** https://wordpress.org/themes/smntcs-retro/  
 **Contributors:** Niels Lange  
 **Requires at least:** WordPress 4.7  
-**Version:** 1.2  
+**Version:** 1.3  
 **License:** GPLv3 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html  
 **Tags:** blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
