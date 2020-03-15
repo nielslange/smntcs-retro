@@ -99,8 +99,8 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 function smntcs_retro_register_styles() {
 
-	wp_enqueue_style( 'retro-style', get_stylesheet_uri(), null, time() );
-	wp_style_add_data( 'retro-style', 'rtl', 'replace' );
+	wp_enqueue_style( 'smntcs-retro-style', get_stylesheet_uri(), null, time() );
+	wp_style_add_data( 'smntcs-retro-style', 'rtl', 'replace' );
 
 }
 add_action( 'wp_enqueue_scripts', 'smntcs_retro_register_styles' );
