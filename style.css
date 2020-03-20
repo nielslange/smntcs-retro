@@ -383,6 +383,19 @@ article p:first-of-type {
 	margin-bottom: 1em;
 }
 
+@media screen and (min-width: 580px) {
+
+	#footer-widget-wrapper {
+		display: flex;
+	}
+
+	#footer-widget-wrapper-left,
+	#footer-widget-wrapper-right {
+		padding-right: 2em;
+	}
+}
+
 #footer-credits-wrapper {
 	margin-bottom: 1em;
 }
+

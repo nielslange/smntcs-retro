@@ -144,9 +144,21 @@ function smntcs_retro_sidebars() {
 
 	register_sidebar(
 		array(
-			'id'            => 'footer-sidebar',
-			'name'          => __( 'Footer Sidebar', 'smntcs-retro' ),
-			'description'   => __( 'Add widgets to the footer sidebar.', 'smntcs-retro' ),
+			'id'            => 'footer-sidebar-left',
+			'name'          => __( 'Footer Sidebar Left', 'smntcs-retro' ),
+			'description'   => __( 'Add widgets to the footer sidebar left.', 'smntcs-retro' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h3 class="widget-title">',
+			'after_title'   => '</h3>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'id'            => 'footer-sidebar-right',
+			'name'          => __( 'Footer Sidebar Right', 'smntcs-retro' ),
+			'description'   => __( 'Add widgets to the footer sidebar right.', 'smntcs-retro' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="widget-title">',
