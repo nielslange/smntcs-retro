@@ -39,7 +39,17 @@
 
 			<div id="footer-widget-wrapper">
 
-				<?php dynamic_sidebar( 'footer-sidebar' ); ?>
+				<div id="footer-widget-wrapper-left">
+
+					<?php dynamic_sidebar( 'footer-sidebar-left' ); ?>
+
+				</div><!-- #footer-widget-wrapper-left -->
+
+				<div id="footer-widget-wrapper-left">
+
+					<?php dynamic_sidebar( 'footer-sidebar-right' ); ?>
+					
+				</div><!-- #footer-widget-wrapper-left -->
 
 			</div><!-- #footer-widget-wrapper -->
 
