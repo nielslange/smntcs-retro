@@ -48,7 +48,7 @@
 				<div id="footer-widget-wrapper-left">
 
 					<?php dynamic_sidebar( 'footer-sidebar-right' ); ?>
-					
+
 				</div><!-- #footer-widget-wrapper-left -->
 
 			</div><!-- #footer-widget-wrapper -->

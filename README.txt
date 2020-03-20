@@ -41,6 +41,9 @@ SMNTCS Retro bundles the following third-party resources:
 
 == Changelog ==
 
+=== 1.4 (2020.03.20) ===
+* [Add second footer widget section](https://github.com/nielslange/smntcs-retro/issues/67)
+
 === 1.3 (2020.03.15) ===
 * [Add 404 page](https://github.com/nielslange/smntcs-retro/issues/63)
 * [Add menu level limitation to README.txt](https://github.com/nielslange/smntcs-retro/issues/57)
