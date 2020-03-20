@@ -4,7 +4,7 @@ Theme URI: https://github.com/nielslange/retro/
 Author: Niels Lange
 Author URI: https://nielslange.de/
 Description: SMNTCS Retro is a minimalistic theme for the average nerd.
-Version: 1.3
+Version: 1.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: smntcs-retro
@@ -314,6 +314,25 @@ article p:first-of-type {
 	margin: 2em 0 4em;
 }
 
+/* Search form *********************************/
+.search-form input[type="search"] {
+	background: var(--nord0);
+	border: 1px solid var(--nord10);
+	box-sizing: border-box;
+	color: var(--nord10);
+	padding: 0.5em 1em;
+	width: 49%;
+}
+
+.search-form input[type="submit"] {
+	background: var(--nord1);
+	border: 1px solid var(--nord10);
+	box-sizing: border-box;
+	color: var(--nord9);
+	padding: 0.5em 1em;
+	width: 49%;
+}
+
 /* Comments ************************************/
 .comment-form label {
 	display: block;
@@ -338,10 +357,10 @@ article p:first-of-type {
 }
 
 .comment-form .form-submit input[type="submit"] {
-	background: var(--nord0);
+	background: var(--nord1);
 	border-color: var(--nord10);
 	box-sizing: border-box;
-	color: var(--nord10);
+	color: var(--nord9);
 	padding: 0.5em 1em;
 	width: 100%;
 }
@@ -364,6 +383,19 @@ article p:first-of-type {
 	margin-bottom: 1em;
 }
 
+@media screen and (min-width: 580px) {
+
+	#footer-widget-wrapper {
+		display: flex;
+	}
+
+	#footer-widget-wrapper-left,
+	#footer-widget-wrapper-right {
+		padding-left: 2em;
+	}
+}
+
 #footer-credits-wrapper {
 	margin-bottom: 1em;
 }
+
