@@ -12,7 +12,7 @@ var files = [ 'comments.php', 'footer.php', 'functions.php', 'header.php',  'ind
 var directories = [ 'assets', 'inc', 'template-parts' ];
 
 // create a file to stream archive data to.
-var version	= 1.3;
+var version	= 1.4;
 var output = fs.createWriteStream( __dirname + '/dist/smntcs-retro-' + version + '.zip' );
 var archive = archiver( 'zip', { zlib: { level: 9 } } );
 

@@ -2,9 +2,9 @@
 
 Contributors: nielslange
 Requires at least: 4.7
-Tested up to: WordPress 5.3
+Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv3 or later  
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html  
 

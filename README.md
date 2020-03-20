@@ -8,7 +8,9 @@
 **Theme URI:** https://wordpress.org/themes/smntcs-retro/  
 **Contributors:** Niels Lange  
 **Requires at least:** WordPress 4.7  
-**Version:** 1.3  
+**Tested up to:** WordPress 5.4  
+**Requires PHP:** 5.6  
+**Version:** 1.4  
 **License:** GPLv3 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html  
 **Tags:** blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -53,6 +55,14 @@ SMNTCS Retro bundles the following third-party resources:
 * URL: https://github.com/source-foundry/Hack/  
 
 ## Changelog
+
+### 1.4 (2020.03.20)
+* [Add second footer widget section](https://github.com/nielslange/smntcs-retro/issues/67)
+
+### 1.3 (2020.03.15)
+* [Add 404 page](https://github.com/nielslange/smntcs-retro/issues/63)
+* [Add menu level limitation to README.txt](https://github.com/nielslange/smntcs-retro/issues/57)
+* [Adjust style handle from retro-style to smntcs-retro-style](https://github.com/nielslange/smntcs-retro/issues/56)
 
 ### 1.2 (2020.03.10)
 * Remove obsolete JS file
