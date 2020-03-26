@@ -392,6 +392,7 @@ article p:first-of-type {
 	#footer-widget-wrapper-left,
 	#footer-widget-wrapper-right {
 		padding-right: 2em;
+		width: 50%;
 	}
 }
 
