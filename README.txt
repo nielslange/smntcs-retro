@@ -4,7 +4,7 @@ Contributors: nielslange
 Requires at least: 4.7
 Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv3 or later  
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html  
 
@@ -40,6 +40,10 @@ SMNTCS Retro bundles the following third-party resources:
 * URL: https://github.com/source-foundry/Hack/  
 
 == Changelog ==
+
+=== 1.5 (2020.03.20) ===
+* [Define widget section width](https://github.com/nielslange/smntcs-retro/issues/70)
+* [Show full content on single pages](https://github.com/nielslange/smntcs-retro/issues/71)
 
 === 1.4 (2020.03.20) ===
 * [Add second footer widget section](https://github.com/nielslange/smntcs-retro/issues/67)
