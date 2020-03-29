@@ -191,3 +191,51 @@ function smntcs_retro_skip_link() {
 	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'smntcs-retro' ) . '</a>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- core trusts translations
 }
 add_action( 'wp_body_open', 'smntcs_retro_skip_link', 5 );
+
+/**
+ * Add theme options to the WordPress customizer
+ *
+ * @since 1.6.0
+ * @param WP_Customize_Manager $wp_customize The customizer object.
+ * @return void
+ */
+function smntcs_retro_customize_register( $wp_customize ) {
+	$wp_customize->add_section(
+		'smntcs_retro_theme_options_section',
+		array(
+			'priority' => 50,
+			'title'    => __( 'Theme Options', 'smntcs-retro' ),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'smntcs_retro_centre_site',
+		array(
+			'default' => false,
+			'type'    => 'theme_mod',
+		)
+	);
+
+	$wp_customize->add_control(
+		'smntcs_retro_centre_site',
+		array(
+			'label'   => __( 'Centre site', 'smntcs-retro' ),
+			'section' => 'smntcs_retro_theme_options_section',
+			'type'    => 'checkbox',
+		)
+	);
+}
+add_action( 'customize_register', 'smntcs_retro_customize_register' );
+
+/**
+ * Add custom CSS to the site
+ *
+ * @since 1.6.0
+ * @return void
+ */
+function smntcs_retro_wp_head() {
+	if ( get_theme_mod( 'smntcs_retro_centre_site' ) ) {
+		print( '<style type="text/css">body { margin: auto; }</style>' );
+	}
+}
+add_action( 'wp_head', 'smntcs_retro_wp_head' );
