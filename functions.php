@@ -211,8 +211,9 @@ function smntcs_retro_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'smntcs_retro_centre_site',
 		array(
-			'default' => false,
-			'type'    => 'theme_mod',
+			'default' 					=> false,
+			'sanitize_callback' => 'sanitize_checkbox',
+			'type'    					=> 'theme_mod',
 		)
 	);
 
@@ -226,6 +227,17 @@ function smntcs_retro_customize_register( $wp_customize ) {
 	);
 }
 add_action( 'customize_register', 'smntcs_retro_customize_register' );
+
+/**
+ * Sanitize boolean for checkbox.
+ *
+ * @since 1.6.0
+ * @param bool $checked Whether or not a box is checked.
+ * @return bool
+ */
+function sanitize_checkbox( $checked ) {
+	return ( ( isset( $checked ) && true === $checked ) ? true : false );
+}
 
 /**
  * Add custom CSS to the site
