@@ -10,7 +10,7 @@
 **Requires at least:** WordPress 4.7  
 **Tested up to:** WordPress 5.4  
 **Requires PHP:** 5.6  
-**Version:** 1.5  
+**Version:** 1.6  
 **License:** GPLv3 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html  
 **Tags:** blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -56,7 +56,10 @@ SMNTCS Retro bundles the following third-party resources:
 
 ## Changelog
 
-### 1.5 (2020.03.20)
+### 1.6 (2020.03.29)
+* [Add theme option to centre site](https://github.com/nielslange/smntcs-retro/issues/74)
+
+### 1.5 (2020.03.26)
 * [Define widget section width](https://github.com/nielslange/smntcs-retro/issues/70)
 * [Show full content on single pages](https://github.com/nielslange/smntcs-retro/issues/71)
 
