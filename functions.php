@@ -35,7 +35,7 @@ function smntcs_retro_theme_support() {
 	global $content_width;
 	if ( ! isset( $content_width ) ) {
 		// phpcs:ignore WPThemeReview.CoreFunctionality.PrefixAllGlobals.NonPrefixedVariableFound
-		$content_width = 580;
+		$content_width = sprintf( '%dpx', get_theme_mod( 'smntcs_retro_site_width', '580' ) );
 	}
 
 	/**
@@ -50,7 +50,7 @@ function smntcs_retro_theme_support() {
 	 *
 	 * @link https://developer.wordpress.org/reference/functions/set_post_thumbnail_size/
 	 */
-	set_post_thumbnail_size( 580, 9999 );
+	set_post_thumbnail_size( get_theme_mod( 'smntcs_retro_site_width', '580' ), 9999 );
 
 	/**
 	 * Enable title tag support.
@@ -212,7 +212,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_centre_site',
 		array(
 			'default'           => false,
-			'sanitize_callback' => 'sanitize_checkbox',
+			'sanitize_callback' => 'smntcs_retro_sanitize_checkbox',
 			'type'              => 'theme_mod',
 		)
 	);
@@ -225,18 +225,57 @@ function smntcs_retro_customize_register( $wp_customize ) {
 			'type'    => 'checkbox',
 		)
 	);
+
+	$wp_customize->add_setting(
+		'smntcs_retro_site_width',
+		array(
+			'default'           => 580,
+			'sanitize_callback' => 'smntcs_retro_sanitize_radio',
+			'type'              => 'theme_mod',
+		)
+	);
+
+	$wp_customize->add_control(
+		'smntcs_retro_site_width',
+		array(
+			'label'   => __( 'Site width', 'smntcs-retro' ),
+			'section' => 'smntcs_retro_theme_options_section',
+			'type'    => 'radio',
+			'choices' => array(
+				'580' => __( '580px' ),
+				'768' => __( '768px' ),
+				'960' => __( '960px' ),
+				'1024' => __( '1024px' ),
+			),
+		
+		)
+	);
 }
 add_action( 'customize_register', 'smntcs_retro_customize_register' );
 
 /**
- * Sanitize boolean for checkbox.
+ * Sanitize checkbox field.
  *
  * @since 1.6.0
  * @param bool $checked Whether or not a box is checked.
- * @return bool
+ * @return bool True if checkbox is activated, othewise false
  */
-function sanitize_checkbox( $checked ) {
+function smntcs_retro_sanitize_checkbox( $checked ) {
 	return ( ( isset( $checked ) && true === $checked ) ? true : false );
+}
+
+/**
+ * Sanitize radio field.
+ *
+ * @param [type] $input
+ * @param [type] $setting
+ * @return bool True if select field is valid, othewise false
+ */
+function smntcs_retro_sanitize_radio( $input, $setting ){
+	$input = sanitize_key($input);
+	$choices = $setting->manager->get_control( $setting->id )->choices;
+										
+	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );                		
 }
 
 /**
@@ -248,6 +287,10 @@ function sanitize_checkbox( $checked ) {
 function smntcs_retro_wp_head() {
 	if ( get_theme_mod( 'smntcs_retro_centre_site' ) ) {
 		print( '<style type="text/css">body { margin: auto; }</style>' );
+	}
+
+	if ( get_theme_mod( 'smntcs_retro_site_width' ) ) {
+		printf( '<style type="text/css">body { max-width: %dpx; }</style>', get_theme_mod( 'smntcs_retro_site_width' ) );
 	}
 }
 add_action( 'wp_head', 'smntcs_retro_wp_head' );
