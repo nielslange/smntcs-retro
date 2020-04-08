@@ -211,9 +211,9 @@ function smntcs_retro_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'smntcs_retro_centre_site',
 		array(
-			'default' 					=> false,
+			'default'           => false,
 			'sanitize_callback' => 'sanitize_checkbox',
-			'type'    					=> 'theme_mod',
+			'type'              => 'theme_mod',
 		)
 	);
 
