@@ -1,3 +1,6 @@
+notifications:
+  slack: smntcs:qFgRV2iveFc1bGrZCuWEQ2mM
+
 dist: trusty
 
 cache:
