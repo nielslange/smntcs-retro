@@ -56,6 +56,9 @@ SMNTCS Retro bundles the following third-party resources:
 
 ## Changelog
 
+### 1.7 (2020.04.08)
+* [Fix image with when using classic editor](https://github.com/nielslange/smntcs-retro/issues/77)
+
 ### 1.6 (2020.03.29)
 * [Add theme option to centre site](https://github.com/nielslange/smntcs-retro/issues/74)
 
