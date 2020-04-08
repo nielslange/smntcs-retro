@@ -242,12 +242,12 @@ function smntcs_retro_customize_register( $wp_customize ) {
 			'section' => 'smntcs_retro_theme_options_section',
 			'type'    => 'radio',
 			'choices' => array(
-				'580' => __( '580px' ),
-				'768' => __( '768px' ),
-				'960' => __( '960px' ),
+				'580'  => __( '580px' ),
+				'768'  => __( '768px' ),
+				'960'  => __( '960px' ),
 				'1024' => __( '1024px' ),
 			),
-		
+
 		)
 	);
 }
@@ -267,15 +267,16 @@ function smntcs_retro_sanitize_checkbox( $checked ) {
 /**
  * Sanitize radio field.
  *
- * @param [type] $input
- * @param [type] $setting
+ * @param mixed $input The input to sanitize.
+ * @param mixed $setting The settings object.
  * @return bool True if select field is valid, othewise false
  */
-function smntcs_retro_sanitize_radio( $input, $setting ){
-	$input = sanitize_key($input);
+function smntcs_retro_sanitize_radio( $input, $setting ) {
+
+	$input   = sanitize_key( $input );
 	$choices = $setting->manager->get_control( $setting->id )->choices;
-										
-	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );                		
+
+	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 }
 
 /**
@@ -290,7 +291,7 @@ function smntcs_retro_wp_head() {
 	}
 
 	if ( get_theme_mod( 'smntcs_retro_site_width' ) ) {
-		printf( '<style type="text/css">body { max-width: %dpx; }</style>', get_theme_mod( 'smntcs_retro_site_width' ) );
+		printf( '<style type="text/css">body { max-width: %dpx; }</style>', (int) get_theme_mod( 'smntcs_retro_site_width' ) );
 	}
 }
 add_action( 'wp_head', 'smntcs_retro_wp_head' );
