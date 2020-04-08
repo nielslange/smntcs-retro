@@ -242,10 +242,10 @@ function smntcs_retro_customize_register( $wp_customize ) {
 			'section' => 'smntcs_retro_theme_options_section',
 			'type'    => 'radio',
 			'choices' => array(
-				'580'  => __( '580px' ),
-				'768'  => __( '768px' ),
-				'960'  => __( '960px' ),
-				'1024' => __( '1024px' ),
+				'580'  => __( '580px', 'smntcs-retro' ),
+				'768'  => __( '768px', 'smntcs-retro' ),
+				'960'  => __( '960px', 'smntcs-retro' ),
+				'1024' => __( '1024px', 'smntcs-retro' ),
 			),
 
 		)
