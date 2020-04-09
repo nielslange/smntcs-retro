@@ -28,6 +28,13 @@ function smntcs_retro_theme_support() {
 	add_theme_support( 'automatic-feed-links' );
 
 	/**
+	 * Add responsive embeds support.
+	 *
+	 * @since 1.8.0
+	 */
+	add_theme_support( 'responsive-embeds' );
+
+	/**
 	 * Set content-width.
 	 *
 	 * @link https://codex.wordpress.org/Content_Width
