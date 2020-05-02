@@ -1,35 +1,35 @@
-describe('Regular page', () => {
+describe.only('Regular page', () => {
 
 	it('can show author', () => {
-		cy.showOnArchive('author');
+		cy.showOnPage('author');
 	});
 	
 	it('can hide author', () => {
-		cy.hideOnArchive('author');
+		cy.hideOnPage('author');
 	});
 	
 	it('can show date', () => {
-		cy.showOnArchive('date');
+		cy.showOnPage('date');
 	});
 	
 	it('can hide date', () => {
-		cy.hideOnArchive('date');
+		cy.hideOnPage('date');
 	});
 	
 	it('can show tags', () => {
-		cy.showOnArchive('tags');
+		cy.showOnPage('tags');
 	});
 	
 	it('can hide tags', () => {
-		cy.hideOnArchive('tags');
+		cy.hideOnPage('tags');
 	});
 	
 	it('can show categories', () => {
-		cy.showOnArchive('categories');
+		cy.showOnPage('categories');
 	});
 	
 	it('can hide categories', () => {
-		cy.hideOnArchive('categories');
+		cy.hideOnPage('categories');
 	});
 
 });

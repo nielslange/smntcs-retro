@@ -1,4 +1,4 @@
-describe.only('Post page', () => {
+describe('Post page', () => {
 
 	it('can show author', () => {
 		cy.showOnPost('author');
