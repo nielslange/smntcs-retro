@@ -1,4 +1,4 @@
-describe.only('Regular page', () => {
+describe('Regular page', () => {
 
 	it('can show author', () => {
 		cy.showOnPage('author');
