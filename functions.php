@@ -348,7 +348,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'smntcs_retro_post_show_author',
+		'smntcs_retro_post_show_date',
 		array(
 			'default'           => true,
 			'sanitize_callback' => 'smntcs_retro_sanitize_checkbox',
@@ -450,7 +450,6 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_page_show_tags',
 		array(
 			'label'       => __( 'Show tags on pages', 'smntcs-retro' ),
-			'description' => __( 'Only works if your pages support tags', 'smntcs-retro' ),
 			'section'     => 'smntcs_retro_theme_options_section',
 			'type'        => 'checkbox',
 		)
@@ -469,7 +468,6 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_page_show_categories',
 		array(
 			'label'       => __( 'Show categories on pages', 'smntcs-retro' ),
-			'description' => __( 'Only works if your pages support categories', 'smntcs-retro' ),
 			'section'     => 'smntcs_retro_theme_options_section',
 			'type'        => 'checkbox',
 		)
