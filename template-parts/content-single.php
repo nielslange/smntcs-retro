@@ -42,7 +42,7 @@ if ( is_single() && get_theme_mod( 'smntcs_retro_post_show_tags', true ) ) {
 
 // Display the post categories on post pages.
 if ( is_single() && get_theme_mod( 'smntcs_retro_post_show_categories', true ) ) {
-	smntcs_retro_post_catgories();
+	smntcs_retro_post_categories();
 }
 
 echo '<br>';

@@ -1,4 +1,4 @@
-describe.only('Settings', () => {
+describe('Settings', () => {
 
 	it('can centre align site', () => {
 		cy.setAlignment('center');

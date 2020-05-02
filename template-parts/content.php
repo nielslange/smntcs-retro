@@ -39,7 +39,7 @@ if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_
 
 // Display the post categories on archive and home page.
 if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_categories', true ) ) {
-	smntcs_retro_post_catgories();
+	smntcs_retro_post_categories();
 }
 
 /** Regular pages */
@@ -61,7 +61,7 @@ if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_tags', true ) ) {
 
 // Display the post categories regular pages.
 if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_categories', true ) ) {
-	smntcs_retro_post_catgories();
+	smntcs_retro_post_categories();
 }
 
 echo '<br>';
