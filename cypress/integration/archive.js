@@ -1,4 +1,4 @@
-describe.only('Archive page', () => {
+describe('Archive page', () => {
 
 	it('can show author', () => {
 		cy.showOnArchive('author');

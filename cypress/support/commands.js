@@ -87,3 +87,27 @@ Cypress.Commands.add('hideOnArchive', field => {
 	cy.get('.post-' + field).should('not.exist');
 });
 
+Cypress.Commands.add('showOnPost', field => {
+	cy.login();
+	cy.visit('/wp-admin/customize.php');
+	cy.get('#accordion-section-smntcs_retro_theme_options_section').click();
+	cy.get('#_customize-input-smntcs_retro_post_show_' + field).check();
+	cy.wait(500);
+	cy.get('#save').click();
+	cy.visit('/test-post');
+	cy.reload();
+	cy.get('.post-' + field);
+});
+
+Cypress.Commands.add('hideOnPost', field => {
+	cy.login();
+	cy.visit('/wp-admin/customize.php');
+	cy.get('#accordion-section-smntcs_retro_theme_options_section').click();
+	cy.get('#_customize-input-smntcs_retro_post_show_' + field).uncheck();
+	cy.wait(500);
+	cy.get('#save').click();
+	cy.visit('/test-post');
+	cy.reload();
+	cy.get('.post-' + field).should('not.exist');
+});
+

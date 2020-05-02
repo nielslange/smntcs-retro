@@ -1,19 +1,35 @@
-// Can show author
-// Can hide author
-// Can show date
-// Can hide date
-// Can show tags
-// Can hide tags
-// Can show categories
-// Can hide categories
-
 describe('Regular page', () => {
-	it('can show author', () => {});
-	it('can hide author', () => {});
-	it('can show date', () => {});
-	it('can hide date', () => {});
-	it('can show tags', () => {});
-	it('can hide tags', () => {});
-	it('can show categories', () => {});
-	it('can hide categories', () => {});
+
+	it('can show author', () => {
+		cy.showOnArchive('author');
+	});
+	
+	it('can hide author', () => {
+		cy.hideOnArchive('author');
+	});
+	
+	it('can show date', () => {
+		cy.showOnArchive('date');
+	});
+	
+	it('can hide date', () => {
+		cy.hideOnArchive('date');
+	});
+	
+	it('can show tags', () => {
+		cy.showOnArchive('tags');
+	});
+	
+	it('can hide tags', () => {
+		cy.hideOnArchive('tags');
+	});
+	
+	it('can show categories', () => {
+		cy.showOnArchive('categories');
+	});
+	
+	it('can hide categories', () => {
+		cy.hideOnArchive('categories');
+	});
+
 });

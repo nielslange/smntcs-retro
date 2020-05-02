@@ -1,19 +1,35 @@
-// Can show author
-// Can hide author
-// Can show date
-// Can hide date
-// Can show tags
-// Can hide tags
-// Can show categories
-// Can hide categories
+describe.only('Post page', () => {
 
-describe('Post page', () => {
-	it('can show author', () => {});
-	it('can hide author', () => {});
-	it('can show date', () => {});
-	it('can hide date', () => {});
-	it('can show tags', () => {});
-	it('can hide tags', () => {});
-	it('can show categories', () => {});
-	it('can hide categories', () => {});
+	it('can show author', () => {
+		cy.showOnPost('author');
+	});
+	
+	it('can hide author', () => {
+		cy.hideOnPost('author');
+	});
+	
+	it('can show date', () => {
+		cy.showOnPost('date');
+	});
+	
+	it('can hide date', () => {
+		cy.hideOnPost('date');
+	});
+	
+	it('can show tags', () => {
+		cy.showOnPost('tags');
+	});
+	
+	it('can hide tags', () => {
+		cy.hideOnPost('tags');
+	});
+	
+	it('can show categories', () => {
+		cy.showOnPost('categories');
+	});
+	
+	it('can hide categories', () => {
+		cy.hideOnPost('categories');
+	});
+
 });
