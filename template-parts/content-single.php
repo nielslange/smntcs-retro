@@ -23,17 +23,27 @@ smntcs_retro_post_title();
 // Display the post featured image.
 the_post_thumbnail();
 
-// Display the post author.
-smntcs_retro_post_author();
+/** Post pages */
 
-// Display the post date.
-smntcs_retro_post_date();
+// Display the post author on post pages.
+if ( is_single() && get_theme_mod( 'smntcs_retro_post_show_author', true ) ) {
+	smntcs_retro_post_author();
+}
 
-// Display the post tags.
-smntcs_retro_post_tags();
+// Display the post date on post pages.
+if ( is_single() && get_theme_mod( 'smntcs_retro_post_show_date', true ) ) {
+	smntcs_retro_post_date();
+}
 
-// Display the post categories.
-smntcs_retro_post_catgories();
+// Display the post tags on post pages.
+if ( is_single() && get_theme_mod( 'smntcs_retro_post_show_tags', true ) ) {
+	smntcs_retro_post_tags();
+}
+
+// Display the post categories on post pages.
+if ( is_single() && get_theme_mod( 'smntcs_retro_post_show_categories', true ) ) {
+	smntcs_retro_post_catgories();
+}
 
 echo '<br>';
 
