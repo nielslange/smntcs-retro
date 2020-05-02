@@ -16,19 +16,19 @@ describe('Regular page', () => {
 		cy.hideOnPage('date');
 	});
 	
-	it('can show tags', () => {
+	it.skip('can show tags', () => {
 		cy.showOnPage('tags');
 	});
 	
-	it('can hide tags', () => {
+	it.skip('can hide tags', () => {
 		cy.hideOnPage('tags');
 	});
 	
-	it('can show categories', () => {
+	it.skip('can show categories', () => {
 		cy.showOnPage('categories');
 	});
 	
-	it('can hide categories', () => {
+	it.skip('can hide categories', () => {
 		cy.hideOnPage('categories');
 	});
 
