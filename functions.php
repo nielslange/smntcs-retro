@@ -518,15 +518,3 @@ function smntcs_retro_wp_head() {
 	}
 }
 add_action( 'wp_head', 'smntcs_retro_wp_head' );
-
-/**
- * Add taxominies to pages.
- *
- * @since 1.8.0
- * @return void
- */
-function smntcs_retro_add_taxonomies_to_pages() {
-	register_taxonomy_for_object_type( 'post_tag', 'page' );
-	register_taxonomy_for_object_type( 'category', 'page' );
-}
-add_action( 'init', 'smntcs_retro_add_taxonomies_to_pages' );
