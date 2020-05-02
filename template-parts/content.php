@@ -28,39 +28,39 @@ if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_
 }
 
 // Display the post date on archive and home page.
-if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_date', true) ) {
+if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_date', true ) ) {
 	smntcs_retro_post_date();
 }
 
 // Display the post tags on archive and home page.
-if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_tags', true) ) {
+if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_tags', true ) ) {
 	smntcs_retro_post_tags();
 }
 
 // Display the post categories on archive and home page.
-if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_categories', true) ) {
+if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_categories', true ) ) {
 	smntcs_retro_post_catgories();
 }
 
 /** Regular pages */
 
 // Display the post author on regular pages.
-if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_author', true) ) {
+if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_author', true ) ) {
 	smntcs_retro_post_author();
 }
 
 // Display the post date on regular pages.
-if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_date', true) ) {
+if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_date', true ) ) {
 	smntcs_retro_post_date();
 }
 
 // Display the post tags on regular pages.
-if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_tags', true) ) {
+if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_tags', true ) ) {
 	smntcs_retro_post_tags();
 }
 
 // Display the post categories regular pages.
-if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_categories', true) ) {
+if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_categories', true ) ) {
 	smntcs_retro_post_catgories();
 }
 
