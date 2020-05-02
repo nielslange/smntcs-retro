@@ -20,7 +20,7 @@
 // Display the post title.
 smntcs_retro_post_title();
 
-/** Archive and home page *****************************************************/
+/** Archive and home page */
 
 // Display the post author on archive and home page.
 if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_author' ) ) {
@@ -42,7 +42,7 @@ if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_
 	smntcs_retro_post_catgories();
 }
 
-/** Post pages ****************************************************************/
+/** Post pages */
 
 // Display the post author on post pages.
 if ( is_single() && get_theme_mod( 'smntcs_retro_post_show_author' ) ) {
@@ -64,7 +64,7 @@ if ( is_single() && get_theme_mod( 'smntcs_retro_post_show_categories' ) ) {
 	smntcs_retro_post_catgories();
 }
 
-/** Regular pages *************************************************************/
+/** Regular pages */
 
 // Display the post author on regular pages.
 if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_author' ) ) {
