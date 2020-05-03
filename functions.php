@@ -503,7 +503,7 @@ function smntcs_retro_sanitize_radio( $input, $setting ) {
 }
 
 /**
- * Add custom CSS to the site
+ * Add custom CSS to the site.
  *
  * @since 1.6.0
  * @return void

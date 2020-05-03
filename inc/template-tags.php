@@ -29,11 +29,11 @@ function smntcs_retro_post_author() {
 }
 
 /**
- * Display the post catgories
+ * Display the post categories
  *
  * @since 1.0.0
  */
-function smntcs_retro_post_catgories() {
+function smntcs_retro_post_categories() {
 
 	$data = get_the_category();
 
@@ -46,9 +46,9 @@ function smntcs_retro_post_catgories() {
 	}
 
 	$label   = __( 'Categories:', 'smntcs-retro' );
-	$wrapper = '<div class="post-cateories">%s %s</div><!-- .post-cateories -->';
+	$wrapper = '<div class="post-categories">%s %s</div><!-- .post-categories -->';
 	$html    = sprintf( $wrapper, $label, implode( ', ', $items ) );
-	$html    = apply_filters( 'smntcs_retro_post_catgories', $html, $data, $wrapper );
+	$html    = apply_filters( 'smntcs_retro_post_categories', $html, $data, $wrapper );
 
 	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
