@@ -45,6 +45,7 @@ SMNTCS Retro bundles the following third-party resources:
 * [Add Cypress e2e tests](https://github.com/nielslange/smntcs-retro/issues/87)
 * [Add post pagination](https://github.com/nielslange/smntcs-retro/issues/89)
 * [Add page width control to customizer](https://github.com/nielslange/smntcs-retro/issues/78)
+* Tested up to 5.4
 
 === 1.8 (2020.04.09) ===
 * [Adjust image height](https://github.com/nielslange/smntcs-retro/issues/81)
