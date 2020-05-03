@@ -314,7 +314,8 @@ article p:first-of-type {
 	margin: 2em 0 4em;
 }
 
-#site-content-posts article img {
+#site-content-posts article img,
+#site-content-posts article figure {
 	max-width: 100%;
 	height: auto;
 }
@@ -372,8 +373,25 @@ article p:first-of-type {
 
 /* Pagination **********************************/
 
+.post-pagination,
 .site-content-pagination {
-	margin: 2em 0;
+	clear: both;
+	padding: 2em 0;
+}
+
+.post-pagination {
+	display: flex;
+}
+
+.post-pagination-previous {
+	padding-left: 1%;
+	width: 50%;
+}
+
+.post-pagination-next {
+	padding-right: 1%;
+	text-align: left;
+	width: 50%;
 }
 
 /*******************************************************************************

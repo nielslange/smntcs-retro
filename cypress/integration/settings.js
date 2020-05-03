@@ -1,11 +1,11 @@
 describe('Settings', () => {
 
 	it('can centre align site', () => {
-		cy.setAlignment('center');
+		cy.adjustAlignment('center');
 	});
 	
 	it('can left align site', () => {
-		cy.setAlignment('left');
+		cy.adjustAlignment('left');
 	});
 
 	it('can set site width to 1024px', () => {

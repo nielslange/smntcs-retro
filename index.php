@@ -28,8 +28,10 @@ get_header();
 			while ( have_posts() ) {
 				the_post();
 
-				if ( is_single() || is_page() ) {
+				if ( is_single() ) {
 					get_template_part( 'template-parts/content-single', get_post_type() );
+				} elseif ( is_page() ) {
+					get_template_part( 'template-parts/content-page', get_post_type() );
 				} else {
 					get_template_part( 'template-parts/content', get_post_type() );
 				}

@@ -28,7 +28,7 @@ Cypress.Commands.add('checkThemeActivation', slug => {
 	});
 });
 
-Cypress.Commands.add('setAlignment', (alignment) => {
+Cypress.Commands.add('adjustAlignment', (alignment) => {
 	cy.login();
 	cy.visit('/wp-admin/customize.php');
 	cy.get('#accordion-section-smntcs_retro_theme_options_section').click();
@@ -133,4 +133,27 @@ Cypress.Commands.add('hideOnPage', field => {
 	cy.visit('/test-page');
 	cy.reload();
 	cy.get('.post-' + field).should('not.exist');
+});
+
+Cypress.Commands.add('adjustPagination', (alignment) => {
+	cy.login();
+	cy.visit('/wp-admin/customize.php');
+	cy.get('#accordion-section-smntcs_retro_theme_options_section').click();
+
+	if ( alignment == 'show') {
+		cy.get('#_customize-input-smntcs_retro_show_post_pagination').check();
+	} else {
+		cy.get('#_customize-input-smntcs_retro_show_post_pagination').uncheck();
+	}
+
+	cy.wait(500);
+	cy.get('#save').click();
+	cy.visit('/test-post');
+	cy.reload();
+
+	if ( alignment == 'show') {
+		cy.get('.post-pagination');
+	} else {
+		cy.get('.post-pagination').should('not.exist');
+	}
 });
