@@ -55,6 +55,26 @@ function smntcs_retro_post_categories() {
 }
 
 /**
+ * Display the post pagination
+ *
+ * @since 1.9.0
+ */
+function smntcs_retro_post_pagination() {
+
+	$previous_link    = get_previous_post_link();
+	$previous_wrapper = sprintf( '<div class="post-pagination-previous">%s</div>', $previous_link );
+
+	$next_link    = get_next_post_link();
+	$next_wrapper = sprintf( '<div class="post-pagination-next">%s</div>', $next_link );
+
+	$wrapper = '<div class="post-pagination">%s %s</div><!-- .post-date -->';
+	$html    = sprintf( $wrapper, $previous_wrapper, $next_wrapper );
+
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
+}
+
+/**
  * Display the post content
  *
  * @since 1.0.0

@@ -32,4 +32,12 @@ describe('Post page', () => {
 		cy.hideOnPost('categories');
 	});
 
+	it('can show pagination', () => {
+		cy.adjustPagination('show');
+	});
+
+	it('can hide pagination', () => {
+		cy.adjustPagination('hide');
+	});
+
 });
