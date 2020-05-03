@@ -10,7 +10,7 @@
 **Requires at least:** WordPress 4.7  
 **Tested up to:** WordPress 5.4  
 **Requires PHP:** 5.6  
-**Version:** 1.8  
+**Version:** 1.9  
 **License:** GPLv3 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html  
 **Tags:** blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
@@ -55,6 +55,12 @@ SMNTCS Retro bundles the following third-party resources:
 * URL: https://github.com/source-foundry/Hack/  
 
 ## Changelog
+
+### 1.9 (2020.05.03)
+* [Add Cypress e2e tests](https://github.com/nielslange/smntcs-retro/issues/87)
+* [Add post pagination](https://github.com/nielslange/smntcs-retro/issues/89)
+* [Add page width control to customizer](https://github.com/nielslange/smntcs-retro/issues/78)
+* Tested up to 5.4
 
 ### 1.8 (2020.04.09)
 * [Adjust image height](https://github.com/nielslange/smntcs-retro/issues/81)
