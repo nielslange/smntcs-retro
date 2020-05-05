@@ -94,6 +94,10 @@ function smntcs_retro_post_content() {
  */
 function smntcs_retro_post_comments() {
 
+	if ( is_shop() || is_cart() || is_checkout() || is_account_page() ) {
+		return;
+	}
+
 	comments_template();
 
 }
@@ -121,6 +125,10 @@ function smntcs_retro_post_date() {
  * @since 1.0.0
  */
 function smntcs_retro_post_edit_link() {
+
+	if ( is_shop() || is_cart() || is_checkout() || is_account_page() ) {
+		return;
+	}
 
 	edit_post_link( null, '<div class="edit-post">', '</div><!-- .edit-post -->' );
 
@@ -165,7 +173,7 @@ function smntcs_retro_post_title() {
 		return;
 	}
 
-	if ( is_single() ) {
+	if ( is_single() || is_page() ) {
 		$wrapper = '<h1 class="post-title">%s</h1><!-- .site-title -->';
 		$html    = sprintf( $wrapper, esc_html( $data ) );
 	} else {

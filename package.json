@@ -38,6 +38,7 @@
     "build": "npm run build:vendor-prefixes && npm run build:rtl && stylelint style.css --fix && stylelint rtl.css --fix",
     "build:rtl": "rtlcss style.css rtl.css",
     "build:vendor-prefixes": "postcss -r --no-map style.css",
+    "bs": "browser-sync start --proxy 'woo.local' --files '**/*' --no-inject-changes",
     "lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "test": "cypress run --headless --browser chrome",

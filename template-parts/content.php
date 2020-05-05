@@ -64,8 +64,6 @@ if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_categories', true ) 
 	smntcs_retro_post_categories();
 }
 
-echo '<br>';
-
 // Display the post excerpt.
 the_excerpt( $post->ID );
 

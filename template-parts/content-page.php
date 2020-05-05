@@ -45,8 +45,6 @@ if ( get_theme_mod( 'smntcs_retro_page_show_categories', true ) ) {
 	smntcs_retro_post_categories();
 }
 
-echo '<br>';
-
 // Display the post content.
 smntcs_retro_post_content();
 
