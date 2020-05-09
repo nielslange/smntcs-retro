@@ -52,11 +52,15 @@ get_header();
 
 	</section><!-- #site-content-posts -->
 
-	<div class="site-content-pagination">
+	<?php if ( is_single() ) : ?>
 
-		<?php the_posts_pagination(); ?>
+		<div class="site-content-pagination">
 
-	</div><!-- #site-content-pagination -->
+			<?php the_posts_pagination(); ?>
+
+		</div><!-- #site-content-pagination -->
+
+	<?php endif; ?>
 
 </main><!-- #site-content -->
 
