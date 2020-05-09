@@ -316,7 +316,7 @@ article p:first-of-type {
 	margin: 2em 0 4em;
 }
 
-#site-content-posts article img,
+#site-content-posts article img:not(.zoomImg),
 #site-content-posts article figure {
 	max-width: 100%;
 	height: auto;
@@ -678,20 +678,15 @@ article p:first-of-type {
 	height: 10em;
 }
 
-.woocommerce form .form-row input.input-text:-ms-input-placeholder,
-.woocommerce form .form-row textarea:-ms-input-placeholder {
-	color: var(--nord9);
-}
-
+/* autoprefixer: off */
 .woocommerce form .form-row input.input-text::-ms-input-placeholder,
-.woocommerce form .form-row textarea::-ms-input-placeholder {
-	color: var(--nord9);
-}
-
+.woocommerce form .form-row textarea::-ms-input-placeholder,
 .woocommerce form .form-row input.input-text::placeholder,
 .woocommerce form .form-row textarea::placeholder {
 	color: var(--nord9);
 }
+
+/* autoprefixer: on */
 
 .woocommerce form .form-row .required {
 	color: var(--nord4);
