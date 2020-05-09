@@ -443,6 +443,85 @@ article p:first-of-type {
 	border-radius: 2px;
 }
 
+#add_payment_method #payment div.payment_box,
+.woocommerce-cart #payment div.payment_box,
+.woocommerce-checkout #payment div.payment_box {
+	background: var(--nord1);
+	border: 1px solid var(--nord3);
+	color: var(--nord4);
+}
+
+#add_payment_method #payment div.payment_box::before,
+.woocommerce-cart #payment div.payment_box::before,
+.woocommerce-checkout #payment div.payment_box::before {
+	border: 1em solid var(--nord3);
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	top: 0;
+	margin: -2em 0 0 2em;
+}
+
+#add_payment_method #payment ul.payment_methods,
+.woocommerce-cart #payment ul.payment_methods,
+.woocommerce-checkout #payment ul.payment_methods {
+	border-bottom: 1px solid var(--nord3);
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:focus,
+.woocommerce div.product .woocommerce-tabs ul.tabs li:hover {
+	background: var(--nord2);
+	border-bottom-color: var(--nord3);
+	color: var(--nord4);
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active::before {
+	box-shadow: 2px 2px 0 var(--nord3);
+	border: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+	border: 1px solid var(--nord1);
+	background-color: var(--nord1);
+	border-radius: 2px 2px 0 0;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+	border-bottom-right-radius: 2px;
+	box-shadow: 2px 2px 0 var(--nord1);
+	border: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+	border-bottom-left-radius: 2px;
+	box-shadow: -2px 2px 0 var(--nord1);
+	border: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:focus,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
+	color: var(--nord4);
+	border: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+	border-bottom: 1px solid var(--nord3);
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active::after {
+	box-shadow: -2px 2px 0 var(--nord3);
+}
+
+.woocommerce .product_meta > span {
+	display: block;
+}
+
+.woocommerce .woocommerce-customer-details address {
+	border-radius: 2px;
+	border: 1px solid var(--nord3);
+	box-sizing: border-box;
+}
+
 .woocommerce-account .woocommerce-MyAccount-navigation {
 	width: 20%;
 }
@@ -479,6 +558,10 @@ article p:first-of-type {
 
 .woocommerce-info::before {
 	color: var(--nord4);
+}
+
+.woocommerce-message {
+	border-top-color: var(--nord14);
 }
 
 .woocommerce form .form-row.woocommerce-invalid .select2-container,
@@ -520,6 +603,32 @@ article p:first-of-type {
 	border: 1px solid var(--nord3);
 	color: var(--nord4);
 	height: 2.5em;
+	padding: 0.5em;
+}
+
+/* @todo: Added due to Gift Card extention */
+.woocommerce input[type="text"],
+.woocommerce textarea {
+	background: var(--nord3);
+	border: 1px solid var(--nord3);
+	color: var(--nord4);
+	height: 1.5em;
+	padding: 0.5em;
+	width: 100%;
+}
+
+/* @todo: Added due to Gift Card extention */
+.woocommerce textarea {
+	height: 5em;
+}
+
+/* @todo: Added due to Gift Card extention */
+.add_gift_card_form #wc_gc_cart_redeem_form button {
+	background: var(--nord2);
+	border: 1px solid var(--nord3);
+	border-radius: 2px;
+	color: var(--nord4);
+	height: 1.5em;
 	padding: 0.5em;
 }
 
@@ -589,8 +698,6 @@ article p:first-of-type {
 	border-radius: 2px;
 	color: var(--nord4);
 	display: block;
-	height: 1.15em;
-	line-height: 1;
 	text-align: center;
 	margin-right: 5px;
 }
@@ -617,8 +724,8 @@ article p:first-of-type {
 
 .woocommerce nav.woocommerce-pagination ul li a,
 .woocommerce nav.woocommerce-pagination ul li span {
-	border: none;
 	background: var(--nord1);
+	border: none;
 }
 
 .woocommerce nav.woocommerce-pagination ul li a:focus,
@@ -674,11 +781,11 @@ article p:first-of-type {
 
 .woocommerce-cart .cart-collaterals .cart_totals tr td,
 .woocommerce-cart .cart-collaterals .cart_totals tr th {
-	border-top: 1px solid var(--nord1);
+	border-top: 1px solid var(--nord3);
 }
 
 .woocommerce table.shop_table {
-	border: 1px solid var(--nord1);
+	border: 1px solid var(--nord3);
 	border-radius: 2px;
 }
 
@@ -688,7 +795,13 @@ article p:first-of-type {
 }	
 
 .woocommerce table.shop_table td {
-	border-top: 1px solid var(--nord1);
+	border-top: 1px solid var(--nord3);
+}
+
+.woocommerce table.shop_table tbody th,
+.woocommerce table.shop_table tfoot td,
+.woocommerce table.shop_table tfoot th {
+	border-top: 1px solid var(--nord3);
 }
 
 .woocommerce #respond input#submit.alt,
