@@ -4,7 +4,7 @@ Contributors: nielslange
 Requires at least: 4.7
 Tested up to: WordPress 5.4
 Requires PHP: 5.6
-Stable tag: 1.9
+Stable tag: 1.10
 License: GPLv3 or later  
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html  
 
@@ -40,6 +40,11 @@ SMNTCS Retro bundles the following third-party resources:
 * URL: https://github.com/source-foundry/Hack/  
 
 == Changelog ==
+
+=== 1.10 (2020.06.03) ===
+* [Add theme option to show full post on archive pages](https://github.com/nielslange/smntcs-retro/issues/92)
+* [Add WooCommerce compatibility](https://github.com/nielslange/smntcs-retro/issues/65)
+* [Fix broken Woo gallery slider](https://github.com/nielslange/smntcs-retro/issues/94)
 
 === 1.9 (2020.05.03) ===
 * [Add Cypress e2e tests](https://github.com/nielslange/smntcs-retro/issues/87)

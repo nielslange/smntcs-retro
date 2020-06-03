@@ -6,13 +6,29 @@ var fs = require( 'fs' );
 var archiver = require( 'archiver' );
 
 // list of files to add
-var files = [ 'comments.php', 'footer.php', 'functions.php', 'header.php',  'index.php', 'LICENSE', 'README.txt', 'rtl.css', 'screenshot.png', 'single.php', 'style.css' ];
+var files = [ 
+	'LICENSE',
+	'README.txt',
+	'comments.php',
+	'footer.php',
+	'functions.php',
+	'header.php',
+	'index.php',
+	'rtl.css',
+	'screenshot.png',
+	'single.php',
+	'style.css'
+];
 
 // list of directories to add
-var directories = [ 'assets', 'inc', 'template-parts' ];
+var directories = [
+	'assets',
+	'inc',
+	'template-parts'
+];
 
 // create a file to stream archive data to.
-var version	= '1.9';
+var version	= '1.10';
 var output = fs.createWriteStream( __dirname + '/dist/smntcs-retro-' + version + '.zip' );
 var archive = archiver( 'zip', { zlib: { level: 9 } } );
 
