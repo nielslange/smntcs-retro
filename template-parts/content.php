@@ -64,8 +64,12 @@ if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_categories', true ) 
 	smntcs_retro_post_categories();
 }
 
-// Display the post excerpt.
-the_excerpt( $post->ID );
+// Display the post excerpt or the full post.
+if ( 'full' == get_theme_mod( 'smntcs_retro_archive_show_posts_as' ) ) {
+	the_content( $post->ID );
+} else {
+	the_excerpt( $post->ID );
+}
 
 // Display the post edit link.
 smntcs_retro_post_edit_link();
