@@ -218,8 +218,8 @@ function smntcs_retro_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'smntcs_retro_theme_general_section',
 		array(
-			'title'    => __( 'General', 'smntcs-retro' ),
-			'panel'    => 'smntcs_retro_theme_options_section',
+			'title' => __( 'General', 'smntcs-retro' ),
+			'panel' => 'smntcs_retro_theme_options_section',
 		)
 	);
 
@@ -286,8 +286,8 @@ function smntcs_retro_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'smntcs_retro_theme_archive_section',
 		array(
-			'title'    => __( 'Archives', 'smntcs-retro' ),
-			'panel'    => 'smntcs_retro_theme_options_section',
+			'title' => __( 'Archives', 'smntcs-retro' ),
+			'panel' => 'smntcs_retro_theme_options_section',
 		)
 	);
 
@@ -393,8 +393,8 @@ function smntcs_retro_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'smntcs_retro_theme_post_section',
 		array(
-			'title'    => __( 'Posts', 'smntcs-retro' ),
-			'panel'    => 'smntcs_retro_theme_options_section',
+			'title' => __( 'Posts', 'smntcs-retro' ),
+			'panel' => 'smntcs_retro_theme_options_section',
 		)
 	);
 
@@ -482,8 +482,8 @@ function smntcs_retro_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'smntcs_retro_theme_page_section',
 		array(
-			'title'    => __( 'Pages', 'smntcs-retro' ),
-			'panel'    => 'smntcs_retro_theme_options_section',
+			'title' => __( 'Pages', 'smntcs-retro' ),
+			'panel' => 'smntcs_retro_theme_options_section',
 		)
 	);
 

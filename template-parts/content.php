@@ -65,7 +65,7 @@ if ( is_page() && get_theme_mod( 'smntcs_retro_archive_show_categories', true ) 
 }
 
 // Display the post excerpt or the full post.
-if ( 'full' == get_theme_mod( 'smntcs_retro_archive_show_posts_as' ) ) {
+if ( 'full' === get_theme_mod( 'smntcs_retro_archive_show_posts_as' ) ) {
 	the_content( $post->ID );
 } else {
 	the_excerpt( $post->ID );
