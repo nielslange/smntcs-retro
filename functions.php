@@ -207,11 +207,19 @@ add_action( 'wp_body_open', 'smntcs_retro_skip_link', 5 );
  * @return void
  */
 function smntcs_retro_customize_register( $wp_customize ) {
-	$wp_customize->add_section(
+	$wp_customize->add_panel(
 		'smntcs_retro_theme_options_section',
 		array(
 			'priority' => 50,
 			'title'    => __( 'Theme Options', 'smntcs-retro' ),
+		)
+	);
+
+	$wp_customize->add_section(
+		'smntcs_retro_theme_general_section',
+		array(
+			'title' => __( 'General', 'smntcs-retro' ),
+			'panel' => 'smntcs_retro_theme_options_section',
 		)
 	);
 
@@ -228,7 +236,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_centre_site',
 		array(
 			'label'   => __( 'Centre site', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_general_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -246,7 +254,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_show_post_pagination',
 		array(
 			'label'   => __( 'Show pagination on post pages', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_general_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -264,7 +272,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_site_width',
 		array(
 			'label'   => __( 'Site width', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_general_section',
 			'type'    => 'radio',
 			'choices' => array(
 				'580'  => __( '580px', 'smntcs-retro' ),
@@ -274,6 +282,41 @@ function smntcs_retro_customize_register( $wp_customize ) {
 			),
 		)
 	);
+
+	$wp_customize->add_section(
+		'smntcs_retro_theme_archive_section',
+		array(
+			'title' => __( 'Archives', 'smntcs-retro' ),
+			'panel' => 'smntcs_retro_theme_options_section',
+		)
+	);
+
+	// ---------------------------------------------------------------------------
+
+	$wp_customize->add_setting(
+		'smntcs_retro_archive_show_posts_as',
+		array(
+			'default'           => true,
+			'sanitize_callback' => 'smntcs_retro_sanitize_select',
+			'type'              => 'theme_mod',
+			'default'           => 'excerpt',
+		)
+	);
+
+	$wp_customize->add_control(
+		'smntcs_retro_archive_show_posts_as',
+		array(
+			'label'   => __( 'Show post as', 'smntcs-retro' ),
+			'section' => 'smntcs_retro_theme_archive_section',
+			'type'    => 'select',
+			'choices' => array(
+				'excerpt' => __( 'Excerpt', 'smntcs-retro' ),
+				'full'    => __( 'Full post', 'smntcs-retro' ),
+			),
+		)
+	);
+
+	// ---------------------------------------------------------------------------
 
 	$wp_customize->add_setting(
 		'smntcs_retro_archive_show_author',
@@ -288,7 +331,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_archive_show_author',
 		array(
 			'label'   => __( 'Show author on archive page', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_archive_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -306,7 +349,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_archive_show_date',
 		array(
 			'label'   => __( 'Show date on archive page', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_archive_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -324,7 +367,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_archive_show_tags',
 		array(
 			'label'   => __( 'Show tags on archive page', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_archive_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -342,8 +385,16 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_archive_show_categories',
 		array(
 			'label'   => __( 'Show categories on archive page', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_archive_section',
 			'type'    => 'checkbox',
+		)
+	);
+
+	$wp_customize->add_section(
+		'smntcs_retro_theme_post_section',
+		array(
+			'title' => __( 'Posts', 'smntcs-retro' ),
+			'panel' => 'smntcs_retro_theme_options_section',
 		)
 	);
 
@@ -360,7 +411,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_post_show_author',
 		array(
 			'label'   => __( 'Show author on posts', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_post_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -378,7 +429,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_post_show_date',
 		array(
 			'label'   => __( 'Show date on posts', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_post_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -396,7 +447,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_post_show_tags',
 		array(
 			'label'   => __( 'Show tags on posts', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_post_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -414,7 +465,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_post_show_categories',
 		array(
 			'label'   => __( 'Show categories on posts', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_post_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -428,11 +479,19 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_section(
+		'smntcs_retro_theme_page_section',
+		array(
+			'title' => __( 'Pages', 'smntcs-retro' ),
+			'panel' => 'smntcs_retro_theme_options_section',
+		)
+	);
+
 	$wp_customize->add_control(
 		'smntcs_retro_page_show_author',
 		array(
 			'label'   => __( 'Show author on pages', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_page_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -450,7 +509,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_page_show_date',
 		array(
 			'label'   => __( 'Show date on pages', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_page_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -468,7 +527,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_page_show_tags',
 		array(
 			'label'   => __( 'Show tags on pages', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_page_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -486,7 +545,7 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		'smntcs_retro_page_show_categories',
 		array(
 			'label'   => __( 'Show categories on pages', 'smntcs-retro' ),
-			'section' => 'smntcs_retro_theme_options_section',
+			'section' => 'smntcs_retro_theme_page_section',
 			'type'    => 'checkbox',
 		)
 	);
@@ -513,6 +572,21 @@ function smntcs_retro_sanitize_checkbox( $checked ) {
  * @return bool True if select field is valid, othewise false
  */
 function smntcs_retro_sanitize_radio( $input, $setting ) {
+
+	$input   = sanitize_key( $input );
+	$choices = $setting->manager->get_control( $setting->id )->choices;
+
+	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
+}
+
+/**
+ * Sanitize radio field.
+ *
+ * @param mixed $input The input to sanitize.
+ * @param mixed $setting The settings object.
+ * @return bool True if select field is valid, othewise false
+ */
+function smntcs_retro_sanitize_select( $input, $setting ) {
 
 	$input   = sanitize_key( $input );
 	$choices = $setting->manager->get_control( $setting->id )->choices;
