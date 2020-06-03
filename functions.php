@@ -310,8 +310,8 @@ function smntcs_retro_customize_register( $wp_customize ) {
 			'section' => 'smntcs_retro_theme_archive_section',
 			'type'    => 'select',
 			'choices' => array(
-				'excerpt' => __( 'Excerpt' ),
-				'full'    => __( 'Full post' ),
+				'excerpt' => __( 'Excerpt', 'smntcs-retro' ),
+				'full'    => __( 'Full post', 'smntcs-retro' ),
 			),
 		)
 	);
