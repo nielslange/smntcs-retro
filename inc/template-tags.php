@@ -8,6 +8,24 @@
  */
 
 /**
+ * Check if WooCommerce is activae and if user is on a WooCommerce page.
+ *
+ * @since 1.11.0
+ */
+function smntcs_retro_is_woocommerce_page() {
+
+	if ( function_exists( 'is_shop' ) && is_shop() ||
+	function_exists( 'is_cart' ) && is_cart() ||
+	function_exists( 'is_checkout' ) && is_checkout() ||
+	function_exists( 'is_account_page' ) && is_account_page() ) {
+		return true;
+	} else {
+		return false;
+	}
+
+}
+
+/**
  * Display the post author
  *
  * @since 1.0.0
@@ -94,7 +112,7 @@ function smntcs_retro_post_content() {
  */
 function smntcs_retro_post_comments() {
 
-	if ( is_shop() || is_cart() || is_checkout() || is_account_page() ) {
+	if ( smntcs_retro_is_woocommerce_page() ) {
 		return;
 	}
 
@@ -126,7 +144,7 @@ function smntcs_retro_post_date() {
  */
 function smntcs_retro_post_edit_link() {
 
-	if ( is_shop() || is_cart() || is_checkout() || is_account_page() ) {
+	if ( smntcs_retro_is_woocommerce_page() ) {
 		return;
 	}
 

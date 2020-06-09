@@ -56,6 +56,9 @@ SMNTCS Retro bundles the following third-party resources:
 
 ## Changelog
 
+### 1.11 (2020.06.09)
+* [Fix fatal error due to function call when WooCommerce is not active](https://github.com/nielslange/smntcs-retro/issues/100)
+
 ### 1.10 (2020.06.03)
 * [Add theme option to show full post on archive pages](https://github.com/nielslange/smntcs-retro/issues/92)
 * [Add WooCommerce compatibility](https://github.com/nielslange/smntcs-retro/issues/65)

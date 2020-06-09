@@ -28,7 +28,7 @@ var directories = [
 ];
 
 // create a file to stream archive data to.
-var version	= '1.10';
+var version	= '1.11';
 var output = fs.createWriteStream( __dirname + '/dist/smntcs-retro-' + version + '.zip' );
 var archive = archiver( 'zip', { zlib: { level: 9 } } );
 
