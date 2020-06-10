@@ -22,7 +22,7 @@ function smntcs_color_schemes() {
 		case 'charlestone-dark':
 			$scheme = 'charlestone-dark.css';
 			break;
-		case 'charlestone-light': // https://coolors.co/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529.
+		case 'charlestone-light':
 			$scheme = 'charlestone-light.css';
 			break;
 		default:
