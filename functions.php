@@ -98,6 +98,7 @@ add_action( 'after_setup_theme', 'smntcs_retro_theme_support' );
  * Include required files.
  */
 require get_template_directory() . '/inc/template-tags.php';
+require get_template_directory() . '/inc/theme-colors.php';
 
 /**
  * Register and enqueue styles.
@@ -215,6 +216,8 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		)
 	);
 
+	// ---------------------------------------------------------------------------
+
 	$wp_customize->add_section(
 		'smntcs_retro_theme_general_section',
 		array(
@@ -260,6 +263,30 @@ function smntcs_retro_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
+		'smntcs_retro_color_scheme',
+		array(
+			'sanitize_callback' => 'smntcs_retro_sanitize_select',
+			'type'              => 'theme_mod',
+			'default'           => 'nordtheme-dark',
+		)
+	);
+
+	$wp_customize->add_control(
+		'smntcs_retro_color_scheme',
+		array(
+			'label'   => __( 'Color scheme', 'smntcs-retro' ),
+			'section' => 'smntcs_retro_theme_general_section',
+			'type'    => 'select',
+			'choices' => array(
+				'nordtheme-dark'    => __( 'Nord (dark)', 'smntcs-retro' ),
+				'nordtheme-light'   => __( 'Nord (light)', 'smntcs-retro' ),
+				'charlestone-dark'  => __( 'Charlestone (dark)', 'smntcs-retro' ),
+				'charlestone-light' => __( 'Charlestone (light)', 'smntcs-retro' ),
+			),
+		)
+	);
+
+	$wp_customize->add_setting(
 		'smntcs_retro_site_width',
 		array(
 			'default'           => 580,
@@ -283,6 +310,8 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		)
 	);
 
+	// ---------------------------------------------------------------------------
+
 	$wp_customize->add_section(
 		'smntcs_retro_theme_archive_section',
 		array(
@@ -290,8 +319,6 @@ function smntcs_retro_customize_register( $wp_customize ) {
 			'panel' => 'smntcs_retro_theme_options_section',
 		)
 	);
-
-	// ---------------------------------------------------------------------------
 
 	$wp_customize->add_setting(
 		'smntcs_retro_archive_show_posts_as',
