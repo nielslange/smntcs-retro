@@ -20,7 +20,7 @@
   "dependencies": {},
   "devDependencies": {
     "@cypress/browserify-preprocessor": "^2.2.3",
-    "@wordpress/browserslist-config": "^2.6.0",
+    "@wordpress/browserslist-config": "^2.7.0",
     "@wordpress/scripts": "^5.1.0",
     "archiver": "^5.0.2",
     "autoprefixer": "^9.8.6",
