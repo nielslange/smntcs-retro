@@ -30,6 +30,7 @@ function smntcs_color_schemes() {
 			break;
 	}
 
-	wp_enqueue_style( 'smntcs-retro-color-scheme', get_stylesheet_directory_uri() . '/color-schemes/' . $scheme, 'smntcs-retro-style', null, 'screen' );
+	$theme = wp_get_theme();
+	wp_enqueue_style( 'smntcs-retro-color-scheme', get_stylesheet_directory_uri() . '/color-schemes/' . $scheme, 'smntcs-retro-style', $theme->version, 'screen' );
 }
 add_action( 'wp_enqueue_scripts', 'smntcs_color_schemes', 11 );

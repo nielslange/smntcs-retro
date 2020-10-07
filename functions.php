@@ -107,7 +107,8 @@ require get_template_directory() . '/inc/theme-colors.php';
  */
 function smntcs_retro_register_styles() {
 
-	wp_enqueue_style( 'smntcs-retro-style', get_stylesheet_uri(), null, time() );
+	$theme = wp_get_theme();
+	wp_enqueue_style( 'smntcs-retro-style', get_stylesheet_uri(), $theme->version, time() );
 	wp_style_add_data( 'smntcs-retro-style', 'rtl', 'replace' );
 
 }
