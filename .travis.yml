@@ -18,17 +18,18 @@ php:
   - 7.0
   - 7.1
   - 7.2
-  - "7.4snapshot"
+  - 7.3
+  - "7.5snapshot"
 
 matrix:
   fast_finish: true
   include:
-    - php: 7.3
+    - php: 7.4
       env: PHPCS=1
 
 allow_failures:
   # Allow failures for unstable builds.
-  - php: "7.4snapshot"
+  - php: "7.5snapshot"
 
 before_install:
   # Speed up build time by disabling Xdebug.
@@ -54,7 +55,4 @@ script:
   # - if [[ "$PHPCS" == 1 ]]; then npm run lint:js; fi
 
   # Run the theme through lint:css checker as defined in @wordpress/scripts package.
-  - if [[ "$PHPCS" == 1 ]]; then npm run lint:css; fi
-
-  # Run the theme through lint:pkg-json checker as defined in @wordpress/scripts package.
-  - if [[ "$PHPCS" == 1 ]]; then npm run lint:pkg-json; fi
+  - if [[ "$PHPCS" == 1 ]]; then npm run lint:scss; fi
