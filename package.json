@@ -19,7 +19,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@cypress/browserify-preprocessor": "^2.2.3",
+    "@cypress/browserify-preprocessor": "^3.0.1",
     "@wordpress/browserslist-config": "^2.7.0",
     "@wordpress/scripts": "^12.3.0",
     "archiver": "^5.0.2",
