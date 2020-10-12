@@ -18,17 +18,18 @@ php:
   - 7.0
   - 7.1
   - 7.2
-  - "7.4snapshot"
+  - 7.3
+  - nightly
 
 matrix:
   fast_finish: true
   include:
-    - php: 7.3
+    - php: 7.4
       env: PHPCS=1
 
 allow_failures:
   # Allow failures for unstable builds.
-  - php: "7.4snapshot"
+  - php: nightly
 
 before_install:
   # Speed up build time by disabling Xdebug.
@@ -37,7 +38,7 @@ before_install:
   - phpenv config-rm xdebug.ini || echo 'No xdebug config.'
 
   - composer install
-  - npm install
+  - npm install -g npm@latest
 
 script:
   # Validate the composer.json file.
