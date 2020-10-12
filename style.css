@@ -657,7 +657,6 @@ article p:first-of-type {
 	height: 10em;
 }
 
-/* autoprefixer: off */
 .woocommerce form .form-row input.input-text::-ms-input-placeholder,
 .woocommerce form .form-row textarea::-ms-input-placeholder,
 .woocommerce form .form-row input.input-text::placeholder,
@@ -665,7 +664,6 @@ article p:first-of-type {
 	color: var(--nord9);
 }
 
-/* autoprefixer: on */
 .woocommerce form .form-row .required {
 	color: var(--nord4);
 }
