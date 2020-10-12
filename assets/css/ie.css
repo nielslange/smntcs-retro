@@ -657,6 +657,10 @@ article p:first-of-type {
 	height: 10em;
 }
 
+.woocommerce form .form-row input.input-text:-ms-input-placeholder, .woocommerce form .form-row textarea:-ms-input-placeholder {
+	color: var(--nord9);
+}
+
 .woocommerce form .form-row input.input-text::-ms-input-placeholder,
 .woocommerce form .form-row textarea::-ms-input-placeholder,
 .woocommerce form .form-row input.input-text::placeholder,
@@ -750,10 +754,6 @@ article p:first-of-type {
 	color: var(--nord9);
 }
 
-.woocommerce-cart table.cart td.actions .coupon .input-text::-ms-input-placeholder {
-	color: var(--nord9);
-}
-
 .woocommerce-cart table.cart td.actions .coupon .input-text::placeholder {
 	color: var(--nord9);
 }
@@ -813,5 +813,4 @@ article p:first-of-type {
 	background: var(--nord3);
 	color: var(--nord4);
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=ie.css.map */

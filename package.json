@@ -19,6 +19,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+<<<<<<< HEAD
     "@cypress/browserify-preprocessor": "^3.0.1",
     "@wordpress/browserslist-config": "^2.7.0",
     "@wordpress/scripts": "^12.3.0",
@@ -26,6 +27,21 @@
     "autoprefixer": "^9.8.6",
     "cypress": "^5.3.0",
     "postcss-cli": "^7.1.2",
+=======
+    "@babel/core": "^7.11.6",
+    "@cypress/browserify-preprocessor": "^3.0.1",
+    "@wordpress/browserslist-config": "^2.7.0",
+    "@wordpress/env": "^2.1.0",
+    "archiver": "^5.0.2",
+    "autoprefixer": "^10.0.1",
+    "chokidar-cli": "^2.1.0",
+    "cypress": "^5.3.0",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.0.0",
+    "puppeteer": "^2.1.1",
+>>>>>>> add/#102
     "rtlcss": "^2.6.0",
     "stylelint": "^13.7.2",
     "stylelint-config-wordpress": "^17.0.0"
@@ -35,13 +51,16 @@
   ],
   "scripts": {
     "archive": "node archive.js",
-    "build": "npm run build:vendor-prefixes && npm run build:rtl && stylelint style.css --fix && stylelint rtl.css --fix",
-    "build:rtl": "rtlcss style.css rtl.css",
-    "build:vendor-prefixes": "postcss -r --no-map style.css",
-    "bs": "browser-sync start --proxy 'woo.local' --files '**/*' --no-inject-changes",
-    "lint:css": "wp-scripts lint-style 'style.css' 'assets/**/*.css'",
-    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "build:style": "node-sass assets/scss/style.scss style.css --output-style expanded --indent-type tab --indent-width 1 --source-map true",
+    "build:rtl": "rtlcss style.css style-rtl.css",
+    "build:ie": "postcss style.css -o assets/css/ie.css",
+    "build": "run-s \"build:*\"",
+    "watch": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
+    "lint:scss": "stylelint **/*.scss",
+    "start": "chokidar \"**/*.scss\" -c \"npm run build\" --initial",
+    "sync": "browser-sync start --proxy 'woo.local' --files '**/*' --no-inject-changes",
     "test": "cypress run --headless --browser chrome",
-    "test:open": "cypress open"
+    "test:open": "cypress open",
+    "wp-env": "wp-env"
   }
 }
