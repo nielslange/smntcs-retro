@@ -41,7 +41,7 @@ before_install:
   - phpenv config-rm xdebug.ini || echo 'No xdebug config.'
 
   - composer install
-  - npm install -g npm@latest
+  - npm i -g npm
 
 script:
   # Validate the composer.json file.
