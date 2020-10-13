@@ -1,4 +1,4 @@
-[![](https://api.travis-ci.com/nielslange/smntcs-retro.svg?branch=master)](https://travis-ci.com/nielslange/smntcs-retro/builds/) 
+[![](https://api.travis-ci.com/nielslange/smntcs-retro.svg?branch=trunk)](https://travis-ci.com/nielslange/smntcs-retro/builds/) 
 [![](https://img.shields.io/github/issues/nielslange/smntcs-retro)](https://github.com/nielslange/smntcs-retro/issues/) 
 [![](https://img.shields.io/github/forks/nielslange/smntcs-retro.svg)](https://github.com/nielslange/smntcs-retro/network/members/) 
 [![](https://img.shields.io/github/stars/nielslange/smntcs-retro.svg)](https://github.com/nielslange/smntcs-retro/stargazers/) 

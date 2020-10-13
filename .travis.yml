@@ -41,7 +41,7 @@ before_install:
   - phpenv config-rm xdebug.ini || echo 'No xdebug config.'
 
   - composer install
-  - npm install -g npm@latest
+  - npm i -g npm
 
 script:
   # Validate the composer.json file.
@@ -58,4 +58,4 @@ script:
   # - if [[ "$PHPCS" == 1 ]]; then npm run lint:js; fi
 
   # Run the theme through lint:css checker as defined in @wordpress/scripts package.
-  - if [[ "$PHPCS" == 1 ]]; then npm run lint:scss; fi
+  # - if [[ "$PHPCS" == 1 ]]; then npm run lint:scss; fi
