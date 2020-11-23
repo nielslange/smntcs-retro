@@ -23,7 +23,7 @@
     "@cypress/browserify-preprocessor": "^3.0.1",
     "@wordpress/browserslist-config": "^2.7.0",
     "@wordpress/env": "^2.1.0",
-    "archiver": "^5.0.2",
+    "archiver": "^5.1.0",
     "autoprefixer": "^10.0.1",
     "chokidar-cli": "^2.1.0",
     "cypress": "^5.5.0",
