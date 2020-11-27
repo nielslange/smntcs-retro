@@ -24,7 +24,7 @@
     "@wordpress/browserslist-config": "^2.7.0",
     "@wordpress/env": "^2.1.0",
     "archiver": "^5.0.2",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.0.3",
     "chokidar-cli": "^2.1.0",
     "cypress": "^5.5.0",
     "node-sass": "^4.14.1",
