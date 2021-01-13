@@ -19,7 +19,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.12.3",
+    "@babel/core": "^7.12.10",
     "@cypress/browserify-preprocessor": "^3.0.1",
     "@wordpress/browserslist-config": "^2.7.0",
     "@wordpress/env": "^2.1.0",
