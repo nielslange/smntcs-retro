@@ -284,7 +284,7 @@ add_action( 'wp_head', 'smntcs_retro_wp_head' );
  * @since 1.13.0
  * @return void
  */
-function smntcs_retro_wp_enqueue_scripts(){
-	wp_enqueue_style('dashicons');
+function smntcs_retro_wp_enqueue_scripts() {
+	wp_enqueue_style( 'dashicons' );
 }
-add_action('wp_enqueue_scripts', 'smntcs_retro_wp_enqueue_scripts', 999);
+add_action( 'wp_enqueue_scripts', 'smntcs_retro_wp_enqueue_scripts', 999 );
