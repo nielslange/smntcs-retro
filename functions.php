@@ -428,6 +428,24 @@ function smntcs_retro_customize_register( $wp_customize ) {
 		)
 	);
 
+	$wp_customize->add_setting(
+		'smntcs_retro_archive_show_more_link',
+		array(
+			'default'           => true,
+			'sanitize_callback' => 'smntcs_retro_sanitize_checkbox',
+			'type'              => 'theme_mod',
+		)
+	);
+
+	$wp_customize->add_control(
+		'smntcs_retro_archive_show_more_link',
+		array(
+			'label'   => __( 'Show more link on archive page', 'smntcs-retro' ),
+			'section' => 'smntcs_retro_theme_archive_section',
+			'type'    => 'checkbox',
+		)
+	);
+
 	$wp_customize->add_section(
 		'smntcs_retro_theme_post_section',
 		array(

@@ -52,7 +52,7 @@ get_header();
 
 	</section><!-- #site-content-posts -->
 
-	<?php if ( is_single() ) : ?>
+	<?php if ( is_home() || is_archive() ) : ?>
 
 		<div class="site-content-pagination">
 

@@ -8,16 +8,17 @@
  */
 
 /**
- * Check if WooCommerce is activae and if user is on a WooCommerce page.
+ * Check if WooCommerce is active and if user is on a WooCommerce page.
  *
  * @since 1.11.0
  */
 function smntcs_retro_is_woocommerce_page() {
 
 	if ( function_exists( 'is_shop' ) && is_shop() ||
-	function_exists( 'is_cart' ) && is_cart() ||
-	function_exists( 'is_checkout' ) && is_checkout() ||
-	function_exists( 'is_account_page' ) && is_account_page() ) {
+		function_exists( 'is_cart' ) && is_cart() ||
+		function_exists( 'is_checkout' ) && is_checkout() ||
+		function_exists( 'is_account_page' ) && is_account_page()
+	) {
 		return true;
 	} else {
 		return false;
@@ -151,6 +152,28 @@ function smntcs_retro_post_edit_link() {
 	edit_post_link( null, '<div class="edit-post">', '</div><!-- .edit-post -->' );
 
 }
+
+/**
+ * Filter more excerpt.
+ *
+ * @param string $more The original string shown within the more link.
+ *
+ * @return string The updated string shown within the more link.
+ */
+function smntcs_retro_excerpt_more( string $more ): string {
+
+	if ( ! is_single() && get_theme_mod( 'smntcs_retro_archive_show_more_link', true ) ) {
+		$more = sprintf(
+			' ... <a class="read-more" href="%1$s">%2$s</a>',
+			get_permalink( get_the_ID() ),
+			esc_html__( 'Read More', 'smntcs-retro' )
+		);
+	}
+
+	return $more;
+
+}
+add_filter( 'excerpt_more', 'smntcs_retro_excerpt_more' );
 
 /**
  * Display the post tags
