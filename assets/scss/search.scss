@@ -1,0 +1,27 @@
+#header-search-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: inherit;
+	display: inline-block;
+	font: inherit;
+	padding: 0;
+	outline: inherit;
+}
+
+#header-search-form {
+	display: none;
+
+	&.visible {
+		display: block;
+	}
+
+	input[type="submit"] {
+		cursor: pointer;
+	}
+
+	input:focus {
+		outline: none;
+	}
+}
+

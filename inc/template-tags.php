@@ -298,3 +298,22 @@ function smntcs_retro_site_title() {
 	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 }
+
+/**
+ * Displays the search.
+ *
+ * @since 1.12.0
+ */
+function smntcs_retro_search() {
+
+	if ( ! get_theme_mod( 'smntcs_retro_show_search', true ) ) {
+		return;
+	}
+
+	$html  = '<button id="header-search-button"><span class="dashicons dashicons-search"></span></button>';
+	$html .= sprintf( '<div id="header-search-form"><hr>%s</div>', get_search_form( false ) );
+
+	$html = apply_filters( 'smntcs_retro_search', $html );
+
+	echo $html; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+}

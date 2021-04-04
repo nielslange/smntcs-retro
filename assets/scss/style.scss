@@ -4,7 +4,9 @@ Theme URI: https://github.com/nielslange/retro/
 Author: Niels Lange
 Author URI: https://nielslange.de/
 Description: SMNTCS Retro is a minimalistic theme for the average nerd.
-Version: 1.11
+Version: 1.13
+Tested up to: 5.7
+Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: smntcs-retro
@@ -15,27 +17,27 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
  *
  * TABLE OF CONTENTS
  *
- * 0. Normalize styles
- * 1. Document styles
- * 2. Required styles
- * 3. Block styles
- * 4. Header
- * 5. Menus
- * 6. Pages
- * 7. Posts
- * 8. Footer
- * 9. WooCommerce
+ * Normalize styles
+ * Document styles
+ * Required styles
+ * Block styles
+ * Header
+ * Menus
+ * Pages
+ * Posts
+ * Footer
+ * WooCommerce
  *
  ******************************************************************************/
 
 /*******************************************************************************
- * 0. Normalize styles
+ * Normalize styles
  ******************************************************************************/
 
 @import "normalize.css";
 
 /*******************************************************************************
- * 1. Document styles
+ * Document styles
  ******************************************************************************/
 
 :root {
@@ -161,7 +163,7 @@ hr {
 }
 
 /*******************************************************************************
- * 2. Required styles
+ * Required styles
  ******************************************************************************/
 
 .wp-caption {
@@ -242,7 +244,7 @@ hr {
 }
 
 /*******************************************************************************
- * 3. Block styles
+ * Block styles
  ******************************************************************************/
 
 .wp-block-image figcaption {
@@ -261,7 +263,7 @@ figure {
 }
 
 /*******************************************************************************
- * 4. Header
+ * Header
  ******************************************************************************/
 
 #site-title h1,
@@ -276,7 +278,7 @@ figure {
 }
 
 /*******************************************************************************
- * 5. Menus
+ * Menus
  ******************************************************************************/
 
 .menu {
@@ -284,6 +286,7 @@ figure {
 	padding: 0;
 	list-style-type: none;
 	list-style-image: none;
+
 }
 
 .menu li {
@@ -300,15 +303,17 @@ article p:first-of-type {
 }
 
 #header-menu {
+	display: inline-block;
 	margin-top: 0.5rem;
+	width: calc(100% - 30px);
 }
 
 /*******************************************************************************
- * 6. Pages
+ * Pages
  ******************************************************************************/
 
 /*******************************************************************************
- * 7. Posts
+ * Posts
  ******************************************************************************/
 
 /* Articles ************************************/
@@ -329,7 +334,7 @@ article p:first-of-type {
 	box-sizing: border-box;
 	color: var(--nord10);
 	padding: 0.5em 1em;
-	width: 49%;
+	width: 79%;
 }
 
 .search-form input[type="submit"] {
@@ -338,7 +343,7 @@ article p:first-of-type {
 	box-sizing: border-box;
 	color: var(--nord9);
 	padding: 0.5em 1em;
-	width: 49%;
+	width: 19%;
 }
 
 /* Comments ************************************/
@@ -397,7 +402,7 @@ article p:first-of-type {
 }
 
 /*******************************************************************************
- * 8. Footer
+ * Footer
  ******************************************************************************/
 
 #site-footer {
@@ -426,7 +431,7 @@ article p:first-of-type {
 }
 
 /*******************************************************************************
- * 9. WooCommerce
+ * WooCommerce
  ******************************************************************************/
 
 #add_payment_method .wc-proceed-to-checkout a.checkout-button,

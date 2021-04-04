@@ -6,7 +6,7 @@ var fs = require( 'fs' );
 var archiver = require( 'archiver' );
 
 // list of files to add
-var files = [ 
+var files = [
 	'LICENSE',
 	'README.txt',
 	'comments.php',
@@ -28,7 +28,7 @@ var directories = [
 ];
 
 // create a file to stream archive data to.
-var version	= '1.11';
+var version	= '1.13';
 var output = fs.createWriteStream( __dirname + '/dist/smntcs-retro-' + version + '.zip' );
 var archive = archiver( 'zip', { zlib: { level: 9 } } );
 
