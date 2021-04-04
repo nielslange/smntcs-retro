@@ -31,4 +31,4 @@ jobs:
           command: php composer.phar install
       - run:
           name: Run CS tests
-          command: composer run-script checkcs
+          command: php ./vendor/squizlabs/php_codesniffer/bin/phpcs --runtime-set testVersion 7.3-
