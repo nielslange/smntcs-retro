@@ -10,7 +10,7 @@
 **Requires at least:** WordPress 5.0  
 **Tested up to:** WordPress 5.7  
 **Requires PHP:** 7.3  
-**Version:** 1.11  
+**Version:** 1.13  
 **License:** GPLv3 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html  
 **Tags:** blog, one-column, custom-menu, featured-images, footer-widgets, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready

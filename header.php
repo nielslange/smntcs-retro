@@ -55,6 +55,8 @@
 
 				</nav>
 
+				<?php smntcs_retro_search(); ?>
+
 				<hr>
 
 			</div><!-- #header-menu -->
