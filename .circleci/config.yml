@@ -31,4 +31,4 @@ jobs:
           command: php composer.phar install
       - run:
           name: Run CS tests
-          command: vendor/bin/phpcs
+          command: composer run-script checkcs
