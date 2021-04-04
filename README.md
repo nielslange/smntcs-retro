@@ -7,9 +7,9 @@
 **Theme Name:** SMNTCS Retro  
 **Theme URI:** https://wordpress.org/themes/smntcs-retro/  
 **Contributors:** Niels Lange  
-**Requires at least:** WordPress 4.7  
-**Tested up to:** WordPress 5.4  
-**Requires PHP:** 5.6  
+**Requires at least:** WordPress 5.0  
+**Tested up to:** WordPress 5.7  
+**Requires PHP:** 7.3  
 **Version:** 1.11  
 **License:** GPLv3 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-3.0.en.html  

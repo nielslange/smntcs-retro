@@ -3,10 +3,10 @@
 Contributors: nielslange
 Requires at least: 4.7
 Tested up to: WordPress 5.4
-Requires PHP: 5.6
+Requires PHP: 7.3
 Stable tag: 1.11
-License: GPLv3 or later  
-License URI: https://www.gnu.org/licenses/gpl-3.0.en.html  
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 SMNTCS Retro is a minimalistic theme for the average nerd.
 
@@ -28,16 +28,16 @@ As SMNTCS Retro is a minimalistic theme, the menu is limited to one level. Multi
 SMNTCS Retro bundles the following third-party resources:
 
 === CSS: Nord ===
-* License: MIT License, https://opensource.org/licenses/MIT  
+* License: MIT License, https://opensource.org/licenses/MIT
 * URL: https://github.com/arcticicestudio/nord
 
 === CSS: normalize.css ===
-* License: MIT License, https://opensource.org/licenses/MIT  
-* URL: https://github.com/necolas/normalize.css/  
+* License: MIT License, https://opensource.org/licenses/MIT
+* URL: https://github.com/necolas/normalize.css/
 
 === Font: Hack ===
-* License: MIT License, https://opensource.org/licenses/MIT  
-* URL: https://github.com/source-foundry/Hack/  
+* License: MIT License, https://opensource.org/licenses/MIT
+* URL: https://github.com/source-foundry/Hack/
 
 == Changelog ==
 
@@ -58,7 +58,7 @@ SMNTCS Retro bundles the following third-party resources:
 === 1.8 (2020.04.09) ===
 * [Adjust image height](https://github.com/nielslange/smntcs-retro/issues/81)
 
-=== 1.7 (2020.04.08) === 
+=== 1.7 (2020.04.08) ===
 * [Add page width control to customizer](https://github.com/nielslange/smntcs-retro/issues/78)
 * [Fix image with when using classic editor](https://github.com/nielslange/smntcs-retro/issues/77)
 
