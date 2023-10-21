@@ -48,6 +48,23 @@ function smntcs_retro_post_author() {
 }
 
 /**
+ * Display the post thumbnail
+ *
+ * @since 2.0.0
+ */
+function smntcs_retro_post_thumbnail() {
+
+	$data = get_the_post_thumbnail(null, 'thumbnail', array( 'class' => 'alignleft' ));
+
+	if ( empty( $data ) ) {
+		return;
+	}
+
+	echo $data; //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+
+}
+
+/**
  * Display the post categories
  *
  * @since 1.0.0
@@ -255,7 +272,6 @@ function smntcs_retro_site_description() {
  * @since 1.0.0
  */
 function smntcs_retro_site_footer() {
-
 	$data[] = gmdate( 'Y' );
 	$data[] = get_bloginfo();
 	$data[] = esc_html__( 'All rights reserved', 'smntcs-retro' );
@@ -265,7 +281,7 @@ function smntcs_retro_site_footer() {
 		esc_html__( 'Powered by WordPress', 'smntcs-retro' )
 	);
 
-	$wrapper = '<div id="site-footer">&copy; %s %s. %s. %s.</div><!--#site-footer -->';
+	$wrapper = '<div id="site-footer">&copy; %s %s. %s. %s.</div><!-- #site-footer -->';
 	$html    = sprintf( $wrapper, $data[0], $data[1], $data[2], $data[3] );
 	$html    = apply_filters( 'smntcs_retro_site_footer', $html, $data, $wrapper );
 

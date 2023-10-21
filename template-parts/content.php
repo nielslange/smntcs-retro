@@ -42,6 +42,11 @@ if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_
 	smntcs_retro_post_categories();
 }
 
+// Display the post thumbnail on archive and home page.
+if ( ( is_archive() || is_home() ) && get_theme_mod( 'smntcs_retro_archive_show_thumbnail', true ) ) {
+	smntcs_retro_post_thumbnail();
+}
+
 /** Regular pages */
 
 // Display the post author on regular pages.

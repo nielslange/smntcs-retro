@@ -46,6 +46,24 @@ function smntcs_retro_theme_archive_section( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
+		'smntcs_retro_archive_show_thumbnail',
+		array(
+			'default'           => true,
+			'sanitize_callback' => 'smntcs_retro_sanitize_checkbox',
+			'type'              => 'theme_mod',
+		)
+	);
+
+	$wp_customize->add_control(
+		'smntcs_retro_archive_show_thumbnail',
+		array(
+			'label'   => __( 'Show thumbnail on archive page', 'smntcs-retro' ),
+			'section' => 'smntcs_retro_theme_archive_section',
+			'type'    => 'checkbox',
+		)
+	);
+
+	$wp_customize->add_setting(
 		'smntcs_retro_archive_show_author',
 		array(
 			'default'           => true,

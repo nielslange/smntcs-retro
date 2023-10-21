@@ -4,7 +4,6 @@ Source: https://github.com/arcticicestudio/nord
 */
 
 :root {
-
 	--smntcs0: #2e3440;
 	--smntcs1: #3b4252;
 	--smntcs2: #434c5e;
@@ -14,7 +13,6 @@ Source: https://github.com/arcticicestudio/nord
 	--smntcs6: #5e81ac;
 	--smntcs7: #bf616a;
 	--smntcs8: #a3be8c;
-
 }
 
 body {

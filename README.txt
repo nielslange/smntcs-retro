@@ -1,10 +1,10 @@
 === SMNTCS Retro ===
 
 Contributors: nielslange
+Tested up to: WordPress 6.4
 Requires at least: 4.7
-Tested up to: WordPress 5.4
 Requires PHP: 7.3
-Stable tag: 1.13
+Stable tag: 2.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 

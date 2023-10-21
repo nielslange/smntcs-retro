@@ -57,7 +57,7 @@ function smntcs_retro_theme_support() {
 	 *
 	 * @link https://developer.wordpress.org/reference/functions/set_post_thumbnail_size/
 	 */
-	set_post_thumbnail_size( get_theme_mod( 'smntcs_retro_site_width', '580' ), 9999 );
+	// set_post_thumbnail_size( get_theme_mod( 'smntcs_retro_site_width', '580' ), 9999 );
 
 	/**
 	 * Enable title tag support.

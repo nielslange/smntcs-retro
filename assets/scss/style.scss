@@ -4,8 +4,8 @@ Theme URI: https://github.com/nielslange/retro/
 Author: Niels Lange
 Author URI: https://nielslange.de/
 Description: SMNTCS Retro is a minimalistic theme for the average nerd.
-Version: 1.13
-Tested up to: 5.7
+Version: 43
+Tested up to: 6.4
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -41,7 +41,6 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
  ******************************************************************************/
 
 :root {
-
 	/* Polar Night */
 	--nord0: #2e3440;
 	--nord1: #3b4252;
@@ -69,28 +68,32 @@ Tags: blog, one-column, custom-menu, featured-images, footer-widgets, rtl-langua
 
 @font-face {
 	font-family: Hack;
-	src: url(./assets/fonts/hack-regular.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-regular.woff?sha=3114f1256) format("woff");
+	src: url(./assets/fonts/hack-regular.woff2?sha=3114f1256) format("woff2"),
+		url(./assets/fonts/hack-regular.woff?sha=3114f1256) format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Hack;
-	src: url(./assets/fonts/hack-bold.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-bold.woff?sha=3114f1256) format("woff");
+	src: url(./assets/fonts/hack-bold.woff2?sha=3114f1256) format("woff2"),
+		url(./assets/fonts/hack-bold.woff?sha=3114f1256) format("woff");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: Hack;
-	src: url(./assets/fonts/hack-italic.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-italic.woff?sha=3114f1256) format("woff");
+	src: url(./assets/fonts/hack-italic.woff2?sha=3114f1256) format("woff2"),
+		url(./assets/fonts/hack-italic.woff?sha=3114f1256) format("woff");
 	font-weight: 400;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: Hack;
-	src: url(./assets/fonts/hack-bolditalic.woff2?sha=3114f1256) format("woff2"), url(./assets/fonts/hack-bolditalic.woff?sha=3114f1256) format("woff");
+	src: url(./assets/fonts/hack-bolditalic.woff2?sha=3114f1256) format("woff2"),
+		url(./assets/fonts/hack-bolditalic.woff?sha=3114f1256) format("woff");
 	font-weight: 700;
 	font-style: italic;
 }
@@ -286,7 +289,6 @@ figure {
 	padding: 0;
 	list-style-type: none;
 	list-style-image: none;
-
 }
 
 .menu li {
@@ -323,7 +325,8 @@ article p:first-of-type {
 
 #site-content-posts article img:not(.zoomImg),
 #site-content-posts article figure {
-	max-width: 100%;
+	max-width: 75px;
+	margin-top: 0.75em;
 	height: auto;
 }
 
@@ -414,7 +417,6 @@ article p:first-of-type {
 }
 
 @media screen and (min-width: 580px) {
-
 	#footer-widget-wrapper {
 		display: flex;
 	}
@@ -646,7 +648,9 @@ article p:first-of-type {
 	border-radius: 2px;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered {
+.select2-container--default
+	.select2-selection--single
+	.select2-selection__rendered {
 	background: var(--nord3);
 	color: var(--nord4);
 }
@@ -668,7 +672,10 @@ article p:first-of-type {
 	scrollbar-color: var(--nord3);
 }
 
-.select2-container--default .select2-results > .select2-results__options ::-webkit-scrollbar {
+.select2-container--default
+	.select2-results
+	> .select2-results__options
+	::-webkit-scrollbar {
 	background: var(--nord3);
 }
 
@@ -724,7 +731,7 @@ article p:first-of-type {
 }
 
 .woocommerce nav.woocommerce-pagination ul li {
-	border-right: 1px solid  var(--nord3);
+	border-right: 1px solid var(--nord3);
 }
 
 .woocommerce nav.woocommerce-pagination ul li:last-of-type {
@@ -772,11 +779,19 @@ article p:first-of-type {
 	width: 120px;
 }
 
-.woocommerce-cart table.cart td.actions .coupon .input-text:-ms-input-placeholder {
+.woocommerce-cart
+	table.cart
+	td.actions
+	.coupon
+	.input-text:-ms-input-placeholder {
 	color: var(--nord9);
 }
 
-.woocommerce-cart table.cart td.actions .coupon .input-text::-ms-input-placeholder {
+.woocommerce-cart
+	table.cart
+	td.actions
+	.coupon
+	.input-text::-ms-input-placeholder {
 	color: var(--nord9);
 }
 
